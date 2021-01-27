@@ -1,0 +1,12 @@
+HOME=xxx
+LANG=en_US.UTF-8
+LANGUAGE=en_US:en
+LOGNAME=xxx
+PATH=your-path-here
+PYTHONPATH=/path-to-/develop/Python
+SHELL=/bin/bash
+SHLVL=0
+TERM=xterm-256color
+USER=your-user
+USERNAME=your-user
+_=/usr/bin/env
