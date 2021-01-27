@@ -1,0 +1,11 @@
+
+ENVIRON_FILE="/path-to-webserver/CGI/environ"
+. $ENVIRON_FILE
+
+while IFS== read -r name value
+do 
+   export ${name}
+done < $ENVIRON_FILE
+
+/path-to-webserver/CGI/full_record.py /path-to-webserver/Config/full_record.cfg
+
