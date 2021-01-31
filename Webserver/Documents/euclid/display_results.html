@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Tiny Library</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="http://localhost/euclid/styles.css">
+<style>
+
+.RecResults {
+  float: left;
+  width: 75%
+}
+.RecordTable {}
+
+.SummaryFields {}
+
+.listHeader {font-size: 18px; font-weight: bold;}
+.collapsibleList li > input + * {
+ display: none;
+}
+
+.collapsibleList li > input:checked + * {
+ display: block;
+}
+
+.collapsibleList li > input {
+ display: none;
+}
+
+.collapsibleList label {
+ cursor: pointer;
+}
+
+.result-body {
+  float: left;
+  width: 75%
+}
+
+.refine-results {
+  float: left;
+  width: 75%
+}
+</style>
+</head>
+<body>
+<h1>SOLR TINY LIBRARY</h1>
+<hr>
+<p>
+<!-- class="search_form" -->
+<form  class="search_form" action="/cgi-bin/search" method="post" name="search_form">
+        <input type="text" id="query" name="query"  placeholder="books and media"  size="50" maxlength="250"  required autofocus value="">
+        <input type="hidden" id="next" name="next"   value="">
+        <button class="button" type="submit">Search</button>
+</form>
+<hr>
+<p>
+<!--RESULT_COUNT=-->
+<hr>
+<p>
+<!--REFINE_RESULTS=-->
+<p>
+<div>
+<!--RESULTS=-->
+</div>
+<p>
+<div>
+<!--PREVIOUS=--><!--NEXT=-->
+</div>
+<!--EXTERNAL_INFO=-->
+</body>
+</html>
