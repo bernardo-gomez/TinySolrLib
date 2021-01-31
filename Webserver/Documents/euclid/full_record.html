@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Tiny Library</title>
+	<link rel="stylesheet" media="screen" href="http://localhost/euclid/styles.css">
+<style>
+.buttona {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 1px;
+  cursor: pointer;
+}
+#staffView {
+  display: none;
+  width: 100%;
+  padding: 5px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("staffView");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</head>
+<body>
+<h1>SOLR TINY LIBRARY</h1>
+<hr>
+<p>
+<!-- class="search_form" -->
+<form  class="search_form" action="/cgi-bin/search" method="post" name="search_form">
+        <input type="text" id="query" name="query"  placeholder="books and media" size="50" maxlength="250"  required autofocus value="">
+        <button class="button" type="submit">Search</button>
+</form>
+<hr>
+<p>
+<div>
+<!--FULL_RECORD=-->
+<h2><!--TITLE=--></h2>
+<table>
+  <!--MAIN_AUTHOR=-->
+  <!--OTHER_AUTHORS=-->
+  <!--FORMAT=-->
+  <!--PUBLISHER=-->
+  <!--PUBLISH_DATE=-->
+  <!--SUBJECTS=-->
+  <!--ONLINE_ACCESS=-->
+</table>
+<p>
+</div>
+<div>
+<!--WORLDCAT=-->
+<!--OCLC_IDENTITY_NETWORK=-->
+<!--STAFF_VIEW=-->
+</div>
+</body>
+</html>
+
