@@ -9,7 +9,7 @@ I suggest that you install Solr as an initial development environment.
 
 [Solr installation guide](https://lucene.apache.org/solr/guide/8_7/installing-solr.html "Solr installation guide")
 
-This platform is a based on a website implemented as a CGI, written in python3 .
+This platform is based on a website implemented as a CGI, written in python3 .
 There is a presentation on how to deploy solr at 
 
 http://solrtinylib.ga/reveal.js/solrtinylib_learn.html (ask bgomez at emory dot edu to turn the server up at the date and time of your convenience)
