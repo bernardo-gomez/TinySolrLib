@@ -3,7 +3,7 @@
 This code implements a bibliographic discovery platform.**
 
 This repository assumes that you have installed Apache Solr. 
-I suggest that you intall Solr as an initial development environment.
+I suggest that you install Solr as an initial development environment.
 
 [Solr binary](https://www.apache.org/dyn/closer.lua/lucene/solr/8.7.0/solr-8.7.0.tgz "Solr binary")
 
