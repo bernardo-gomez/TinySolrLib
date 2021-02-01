@@ -11,5 +11,9 @@ I suggest that you install Solr as an initial development environment.
 
 This platform is a based on a website implemented as a CGI, written in python3 .
 
+There is a demonstration server at:
+http://solrtinylib.ga/cgi-bin/search  (ask bgomez at emory dot edu to turn the server up at the date and time of your convenience).
+
+
 
 
