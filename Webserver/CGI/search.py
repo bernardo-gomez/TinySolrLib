@@ -355,16 +355,34 @@ def process_form(user_query,solr_host,solr_path,form_file,display_results,displa
 
           spell_req=solr_host+solr_path+'spell?spellcheck.q='+user_query+'&spellcheck=on'
           response = requests.get(spell_req,auth=HTTPBasicAuth(authorized_user,authorized_passwd),timeout=10)
+          if response.status_code != 200:
+             print ("solr error. return code:",str(response.status_code),file=sys.stderr)
+             print_error("System error(24)")
+             return
+
+              
           jsonResponse = response.json()
           if jsonResponse["responseHeader"]["status"]  != 0:
              print ("solr error",file=sys.stderr)
              print_error("System error(6)")
              return
+
           page_string=""
           with open(form_file) as f:
               for line in f:
                   page_string+=line
           in_line=re.compile(r'(.*<input type="text".*?value=")(.*?")(.*?>)(.*)',flags=re.DOTALL)
+
+          if "spellcheck" not in jsonResponse:
+              no_results='<div><h2>No Results Found</h2></div>'
+              page_string=page_string.replace("<!--NORESULTS=-->",no_results)
+              user_query=urllib.parse.unquote(user_query,encoding='utf-8')
+              m=in_line.match(page_string)
+              if m:
+                 page_string=m.group(1)+user_query+'"'+m.group(3)+m.group(4)
+              print_page(page_string)
+              return
+
           if len(jsonResponse["spellcheck"]["collations"]) == 0:
               no_results='<div><h2>No Results Found</h2></div>'
               page_string=page_string.replace("<!--NORESULTS=-->",no_results)
@@ -547,4 +565,4 @@ def process_form(user_query,solr_host,solr_path,form_file,display_results,displa
   return
 
 if __name__ == "__main__":
-    main()
+    main() 
