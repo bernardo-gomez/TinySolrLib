@@ -204,7 +204,8 @@ def main():
            if term !="":
               term=str(term)
               if term[0] != "+" and term[0] != "-":
-                 normalized_q+="+"+str(term)+" "
+                 if str(term) != "OR" and str(term) != "AND" and str(term) != "NOT":
+                   normalized_q+="+"+str(term)+" "
               else:
                  normalized_q+=str(term)+" "
 
@@ -307,7 +308,6 @@ def process_form(user_query,solr_host,solr_path,form_file,display_results,displa
 
 ### API call to solr server
       search=solr_host+solr_path+'select?q='+query+'&facet=on&facet.field=pubDate&&facet.field=language&facet.field=resourceType&facet.field=topic&facet.field=genre&facet.field=creator&facet.field=contributor&facet.mincount=1&rows='+page_size+'&start='+next_page
-
       try:
          response = requests.get(search,auth=HTTPBasicAuth(authorized_user,authorized_passwd),timeout=10)
       except:
@@ -320,7 +320,7 @@ def process_form(user_query,solr_host,solr_path,form_file,display_results,displa
              print_error("System error(22). Bad credentials.")
              return
          else:
-             print("connection to solr server failed. status code:",str(responsa.status_code),file=sys.stderr)
+             print("connection to solr server failed. status code:",str(response.status_code),file=sys.stderr)
              print_error("System error(23).")
              return
       try:
@@ -565,4 +565,5 @@ def process_form(user_query,solr_host,solr_path,form_file,display_results,displa
   return
 
 if __name__ == "__main__":
-    main() 
+    main()
+
