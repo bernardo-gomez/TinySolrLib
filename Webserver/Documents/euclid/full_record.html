@@ -5,38 +5,82 @@
 	<title>Tiny Library</title>
 	<link rel="stylesheet" media="screen" href="http://localhost/euclid/styles.css">
 <style>
-.buttona {
-  background-color: blue;
-  border: none;
-  color: white;
-  padding: 8px 8px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 1px 1px;
-  cursor: pointer;
+input[type='checkbox'] {
+	display: none;
 }
-#staffView {
-  display: none;
-  width: 100%;
-  padding: 5px 0;
-  text-align: left;
-  background-color: white;
-  margin-top: 5px;
+
+.wrap-collabsible {
+	margin: 1.2rem 0;
 }
+
+.lbl-toggle {
+	display: inline-block;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 1rem;
+	color: #37474f;
+	background: #f5f5f5;
+	cursor: pointer;
+	border-radius: 7px;
+	transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+	color: #bdbdbd;
+}
+
+.lbl-toggle::before {
+	content: ' ';
+	display: inline-block;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid currentColor;
+	vertical-align: middle;
+	margin-right: .7rem;
+	transform: translateY(-2px);
+	transition: transform .2s ease-out;
+}
+
+.toggle:checked+.lbl-toggle::before {
+	transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+	max-height: 0px;
+	overflow: scroll;
+	transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked+.lbl-toggle+.collapsible-content {
+	max-height: none;
+}
+
+.toggle:checked+.lbl-toggle {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+	background: white;
+	border-bottom: 1px solid rgba(0, 105, 255, .45);
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	padding: .5rem 1rem;
+}
+
+.collapsible-content p {
+	margin-bottom: 0;
+}
+.collapsible-content pre {
+	margin-bottom: 0;
+}
+
+
 </style>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("staffView");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
 </head>
 <body>
 <h1>SOLR TINY LIBRARY</h1>
@@ -66,8 +110,20 @@ function myFunction() {
 <div>
 <!--WORLDCAT=-->
 <!--OCLC_IDENTITY_NETWORK=-->
+
+  <div class="wrap-collabsible">
+  <input id="collapsible" class="toggle" type="checkbox">
+  <label for="collapsible" class="lbl-toggle">Staff view</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+      <pre>
 <!--STAFF_VIEW=-->
+      </pre>
+    </div>
+  </div>
+</div>
+
+
 </div>
 </body>
-</html> 
-
+</html>
