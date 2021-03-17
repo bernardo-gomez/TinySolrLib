@@ -97,10 +97,8 @@ class fullRecord:
                 page_string=page_string.replace("<!--ONLINE_ACCESS=-->",online)
      if oclc_link != "":
                 worldcat="<div><h2>"+"<a href=\""+oclc_link+"\" target=\"_blank\">"+"This item in Worldcat</a></h2></div>"
-                staff_view="<pre>"+record_text+"</pre>"
                 page_string=page_string.replace("<!--WORLDCAT=-->",worldcat)
-#               staff_view="<pre>"+record_text+"</pre>"
-                staff_view='<button class="button" onclick="myFunction()">Staff View</button><div id="myDIV"><pre>'+record_text+'</pre></div>'
+                staff_view=record_text
                 page_string=page_string.replace("<!--STAFF_VIEW=-->",staff_view)
      try:
            authority_id=jsonResponse["response"]["docs"][0]["loc_authority_name"][0]
@@ -118,3 +116,4 @@ class fullRecord:
 if __name__=="__main__":
     page=fullRecord("/Users/bernardo/Webserver/Documents/euclid/full_record.html")
     print(page)
+    
