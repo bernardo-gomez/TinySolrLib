@@ -1,17 +1,170 @@
 <add>
-  <doc>
-    <field name="id">990007175530302486</field>
-    <field name="creator">Davis, Miles.</field>
-    <field name="author">Davis Miles</field>
-    <field name="title">The complete Miles Davis at Montreux</field>
-    <field name="pubDate">2002</field>
-    <field name="genre">Jazz.</field>
-    <field name="genre">Jazz vocals.</field>
-    <field name="genre">Live sound recordings.</field>
-    <field name="language">english</field>
-    <field name="resourceType">audio</field>
-    <field name="loc_authority_name">n50035608</field>
-    <field name="record">=LDR  ^^^^^cjm^a2200577Ia^4500
+<doc>
+<field name="id">990003247200302486</field>
+<field name="title">مراسلات الباب العالي الى ولاية الحجاز : مكة المكرمة، المدينة المنورة، في الفترة من ٣٨٢١ الى ١٩٢١ ھ </field>
+<field name="creator">صابان، سهيل،</field>
+<field name="author">صابان سهيل</field>
+<field name="contributor">صابان، سهيل،</field>
+<field name="pubDate">2004</field>
+<field name="language">Arabic</field>
+<field name="resourceType">Book</field>
+<field name="record">=LDR  ^^^^^aam^a2200481^a^4500
+=001  990003247200302486
+=005  20160418194929.0
+=008  050131s2004^^^^enka^^^^^b^^^^001^0^ara^d
+=010  \\$a2004636806
+=020  \\$a996010656X
+=020  \\$a9789960106564
+=035  \\$a(Aleph)000324720EMU01
+=035  9\$au2431513
+=035  \\$aocm60521981
+=035  \\$a(Sirsi) o60521981
+=040  \\$aCtY$cYUS$dDLC$dEMU$dUtOrBLW
+=041  1\$aara$hota
+=042  \\$alccopycat$alcode
+=043  \\$aa-su---$aa-tu---
+=049  \\$aEMUU
+=050  00$aDS247.9.H45$bM87 2004
+=245  00$6880-01$aMurāsalāt al-Bāb al-ʻĀlī ilá Wilāyat al-Ḥijāz :$bMakkah al-Mukarramah, al-Madīnah al-Munawwarah, fī al-fatrah min 1283 ilá 1291 H /$ctarjamat wa-taʻlīq Suhayl Ṣābān.
+=880  00$6245-01//r$aمراسلات الباب العالي الى ولاية الحجاز :$bمكة المكرمة، المدينة المنورة، في الفترة من ٣٨٢١ الى ١٩٢١ ھ /$cترجمة وتعليق سهيل صابان.
+=246  15$aCorrespondences of the Ottoman Sublime Port to al-Hijaz Province (Makkah and Madinah)
+=264  \1$6880-02$a[al-Riyāḍ] :$bMuʼassasat al-Furqān lil-Turāth al-Islāmī, Farʻ Mawsūʻat Makkah al-Mukarramah wa-al-Madīnah al-Munawwarah,$c2004.
+=880  \1$6264-02//r$a[الرياض] :$bمؤسسة الفرقان للتراث الاسلامي، فرع موسوعة مكة المكرمة والمدينة المنورة،$c2004.
+=300  \\$a411 pages :$billustrations ;$c25 cm
+=336  \\$atext$btxt$2rdacontent
+=337  \\$aunmediated$bn$2rdamedia
+=338  \\$avolume$bnc$2rdacarrier
+=546  \\$aTexts in Arabic, translated from Ottoman Turkish; includes facsimiles of original Ottoman documents.
+=504  \\$aIncludes bibliographical references and index.
+=520  \\$aHejaz (Saudi Arabia); relations; Turkey; history; 19th century; correspondences; sources.
+=651  \0$aHejaz (Saudi Arabia)$xHistory$y19th century$vSources.
+=651  \0$aTurkey$xHistory$yOttoman Empire, 1288-1918$vSources.
+=700  1\$6880-03$aṢābān, Suhayl,$d1960-
+=880  1\$6700-03//r$aصابان، سهيل،$d1960-
+=910  \\$aRDA ENRICHED
+=910  \\$aMARS
+=945  \\$aEMU haf
+=945  \\$a9DT$220060914
+=949  \\$wLC$c1$i010001029441$mGENERAL$lSTACKS$rY$sY$tBOOK
+=994  \\$aC0$bEMU
+</field>
+</doc>
+<doc>
+<field name="id">990003279480302486</field>
+<field name="title">وقال نسوة في المدينة : نماذج من التراث النسوي الشفهي </field>
+<field name="creator">بن علية، قدور.</field>
+<field name="author">بن علية قدور</field>
+<field name="contributor">بن علية، قدور.</field>
+<field name="pubDate">2003</field>
+<field name="topic">Folk poetry, Arabic</field>
+<field name="topic">Women</field>
+<field name="topic">Dialect poetry, Arabic</field>
+<field name="language">Arabic</field>
+<field name="resourceType">Book</field>
+<field name="record">=LDR  ^^^^^aam^a2200457^a^4500
+=001  990003279480302486
+=005  20160418195030.0
+=008  040130s2003^^^^ae^a^^^^^b^^^^000^0^ara^^
+=010  \\$a2004345722
+=020  \\$a9961542754
+=020  \\$a9789961542750
+=035  \\$a(Aleph)000327948EMU01
+=035  9\$au2435228
+=035  \\$aocm54753266
+=035  \\$a(Sirsi) o54753266
+=040  \\$aDLC-R$cDLC$dEMU$dUtOrBLW
+=042  \\$alcode
+=043  \\$af-ae---
+=049  \\$aEMUU
+=050  00$aPJ8274$b.W37 2003
+=245  00$6880-01$aWa-qāla niswah fī al-madīnah :$bnamādhij min al-turāth al-niswī al-shafahī /$cjamʻ wa-taqdīm Qaddūr ibn ʻAlīyah.
+=880  00$6245-01//r$aوقال نسوة في المدينة :$bنماذج من التراث النسوي الشفهي /$cجمع وتقديم قدور بن علية.
+=264  \1$6880-02$aWahrān :$bDār al-Gharb lil-Nashr wa-al-Tawzīʻ,$c[2003]
+=880  \1$6264-02//r$aوهران :$bدار الغرب للنشر والتوزيع،$c[2003]
+=300  \\$a61 pages :$billustrations ;$c20 cm
+=336  \\$atext$btxt$2rdacontent
+=337  \\$aunmediated$bn$2rdamedia
+=338  \\$avolume$bnc$2rdacarrier
+=504  \\$aIncludes bibliographical references (page 61).
+=520  \\$aWomen folk poetry; with comments.
+=650  \0$aFolk poetry, Arabic$zAlgeria.
+=650  \0$aDialect poetry, Arabic$zAlgeria.
+=650  \0$aWomen$zAlgeria$vFolklore.
+=700  1\$6880-03$aBin ʻAlīyah, Qaddūr.
+=880  1\$6700-03//r$aبن علية، قدور.
+=910  \\$aRDA ENRICHED
+=910  \\$aMARS
+=945  \\$aEMU haf
+=945  \\$a9DT$220060509
+=949  \\$wLC$c1$i010001027946$mGENERAL$lSTACKS$rY$sY$tBOOK
+=994  \\$aC0$bEMU
+</field>
+</doc>
+<doc>
+<field name="id">990006882230302486</field>
+<field name="title">معجم المؤلفات الليبية المطبوعة في الأدب الحديث  </field>
+<field name="creator">أبو ديب، الصيد.</field>
+<field name="author">أبو ديب الصيد</field>
+<field name="pubDate">2006</field>
+<field name="topic">Arabic literature</field>
+<field name="language">Arabic</field>
+<field name="resourceType">Book</field>
+<field name="loc_authority_name">n2006203256</field>
+<field name="record">=LDR  ^^^^^cam^a22004694a^4500
+=001  990006882230302486
+=005  20200615143439.0
+=008  070124s2006^^^^ly^^^^^^^b^^^f000^0^ararc
+=010  \\$a2007330349
+=020  \\$a9959381536
+=020  \\$a9789959381538
+=035  \\$a(Aleph)000688223EMU01
+=035  9\$au2911164
+=035  \\$a(OCoLC)80904367
+=035  \\$a(Sirsi) o80904367
+=035  \\$a(OCoLC)80904367
+=040  \\$aDLC-R$cDLC$dIUL$dEMU$dUtOrBLW
+=042  \\$alcode$apcc
+=043  \\$af-ly---
+=049  \\$aEMUU
+=050  \4$aPJ8222$b.A28 2006
+=100  1\$6880-01$aAbū Dīb, al-Ṣayd.
+=880  1\$6100-01//r$aأبو ديب، الصيد.
+=245  10$6880-02$aMuʻjam al-muʼallafāt al-Lībīyah al-maṭbūʻah fī al-adab al-ḥadīth /$ciʻdād al-Ṣayd Abū Dī̈b.
+=880  10$6245-02//r$aمعجم المؤلفات الليبية المطبوعة في الأدب الحديث /$cإعداد الصيد أبو ديب.
+=264  \1$6880-03$aSirt :$bMajlis al-Thaqāfah al-ʻĀmm,$c2006.
+=880  \1$6264-03//r$aسرت :$bمجلس الثقافة العام،$c2006.
+=300  \\$a207 pages ;$c24 cm
+=336  \\$atext$btxt$2rdacontent
+=337  \\$aunmediated$bn$2rdamedia
+=338  \\$avolume$bnc$2rdacarrier
+=504  \\$aIncludes bibliographical references.
+=520  \\$aArabic literature; Libya; bibliography.
+=650  \0$aArabic literature$zLibya$vBibliography.
+=650  \0$aArabic literature$y20th century$vBibliography.
+=910  \\$aRDA ENRICHED
+=910  \\$aMARS
+=940  \\$aCOVID19
+=945  \\$aEMU haf
+=945  \\$a9DT$220070530
+=949  \\$wLC$i010001241160$mGENERAL$lSTACKS$rY$sY$tBOOK
+=994  \\$aC0$bEMU
+</field>
+</doc>
+<doc>
+<field name="id">990007175530302486</field>
+<field name="title">The complete Miles Davis at Montreux </field>
+<field name="creator">Davis, Miles.</field>
+<field name="author">Davis Miles</field>
+<field name="pubDate">2002</field>
+<field name="topic">Jazz vocals.</field>
+<field name="topic">Jazz musicians.</field>
+<field name="topic">Jazz musicians</field>
+<field name="topic">Jazz.</field>
+<field name="topic">Live sound recordings.</field>
+<field name="language">English</field>
+<field name="resourceType">Sound recording</field>
+<field name="loc_authority_name">n50035608</field>
+<field name="record">=LDR  ^^^^^cjm^a2200577Ia^4500
 =001  990007175530302486
 =005  20160418211004.0
 =007  sd^fungnn|||eu
@@ -57,23 +210,118 @@
 =910  \\$aMARS
 =945  \\$aemu pmb
 =945  \\$a9DT$220080225
-=994  \\$aZ0$bEMU</field>
-  </doc>
-  <doc>
-    <field name="id">990012699680302486</field>
-    <field name="creator">Davis, Miles.</field>
-    <field name="author">Davis Miles</field>
-    <field name="contributor">Troupe, Quincy.</field>
-    <field name="author">Troupe Quincy</field>
-    <field name="title">Miles the autobiography</field>
-    <field name="pubDate">1989</field>
-    <field name="topic">Davis, Miles.</field>
-    <field name="genre">Jazz Musicians.</field>
-    <field name="genre">African American author.</field>
-    <field name="language">english</field>
-    <field name="resourceType">book</field>
-    <field name="loc_authority_name">n50035608</field>
-    <field name="record">=LDR  ^^^^^nam^a22003618a^4500
+=994  \\$aZ0$bEMU
+</field>
+</doc>
+<doc>
+<field name="id">990007346960302486</field>
+<field name="title">Miles electric a different kind of blue </field>
+<field name="author">Lerner Murray</field>
+<field name="author">Davis Miles</field>
+<field name="author">Hancock Herbie</field>
+<field name="author">Corea Chick</field>
+<field name="author">Santana Carlos</field>
+<field name="author">Jarrett Keith</field>
+<field name="author">Mitchell Joni</field>
+<field name="author">Liebman Dave</field>
+<field name="contributor">Lerner, Murray.</field>
+<field name="contributor">Davis, Miles.</field>
+<field name="contributor">Hancock, Herbie.</field>
+<field name="contributor">Corea, Chick.</field>
+<field name="contributor">Santana, Carlos.</field>
+<field name="contributor">Jarrett, Keith.</field>
+<field name="contributor">Mitchell, Joni.</field>
+<field name="contributor">Liebman, Dave.</field>
+<field name="pubDate">2004</field>
+<field name="genre">Concert films.</field>
+<field name="genre">Documentary films.</field>
+<field name="topic">Jazz musicians</field>
+<field name="topic">Jazz</field>
+<field name="topic">Trumpet players</field>
+<field name="language">English</field>
+<field name="resourceType">Video</field>
+<field name="record">=LDR  ^^^^^cgm^a2200757Ia^4500
+=001  990007346960302486
+=005  20181019153046.0
+=007  vd^cvaizq
+=008  041213s2004^^^^xxu123^g^^^^^^^^^^vleng^d
+=024  1\$a801213902095
+=028  42$aEE39020-9$bRed Distribution
+=035  \\$a(Aleph)000734696EMU01
+=035  9\$au2975269
+=035  \\$aocm57217818
+=035  \\$a(Sirsi) o57217818
+=035  \\$a(OCoLC)57217818
+=037  \\$bMidwest Tapes$nhttp://www.midwesttapes.com
+=040  \\$aTEFMT$cTEFMT$dRCS$dOCLCQ$dMDY$dOCL$dBTCTA$dLVB$dRCS$dUtOrBLW
+=041  1\$aeng$jeng$jspa$jfre$heng
+=043  \\$an-us---
+=082  04$a788.9/2165/092$222
+=090  \\$aML419.D39$bM56 2004
+=245  00$aMiles electric$h[videorecording] :$ba different kind of blue /$cEagle Vision presents a Murray Lerner film ; produced &amp; directed by Murray Lerner ; an MLF production in association with Eagle Rock Entertainment, Ltd.
+=246  30$aDifferent kind of blue
+=264  \1$a[United States] :$bEagle Eye Media,$c[2004]
+=264  \4$c©2004
+=300  \\$a1 videodisc (approximately 123 min.) :$bsound, color ;$c4 3/4 in. +$eprogram notes.
+=336  \\$atwo-dimensional moving image$btdi$2rdacontent
+=337  \\$avideo$bv$2rdamedia
+=338  \\$avideodisc$bvd$2rdacarrier
+=340  \\$b4 3/4 in.
+=344  \\$adigital$boptical$gstereo$hDolby
+=347  \\$avideo file
+=538  \\$aDVD, regions 1 and 4; 4:3 aspect ratio; DTS 5.1, Dolby 5.1 or PCM stereo sound; full screen presentation; Playstation 2 and XBOX compatible.
+=546  \\$aIn English with optional English, Spanish or French subtitles.
+=511  0\$aMiles Davis, Herbie Hancock, Chick Corea, Carlos Santana, Joni Mitchell, Keith Jarrett, Dave Liebman, Stanley Crouch.
+=508  \\$aExecutive producers. Terry Shand, Geoff Kempin ; editors, Edward Goldberg, Einar Westerlund ; cameramen, Henry Adebonojo ... [et al.]
+=500  \\$aSpecial features: additional interview footage; first electric period sessionography.
+=500  \\$aProgram notes (6 p. : port.) inserted in container.
+=520  \\$aDiscusses Miles Davis' music of the late 1960s-early 1970s, with commentary from musicians Chick Corea, Carlos Santana, Joni Mitchell and others; also includes Davis's complete Aug. 29, 1970 performance at the Isle of Wight.
+=600  10$aDavis, Miles.
+=650  \0$aJazz musicians$zUnited States.
+=650  \0$aTrumpet players$zUnited States.
+=650  \0$aJazz$y1961-1970$xHistory and criticism.
+=650  \0$aJazz$y1971-1980$xHistory and criticism.
+=650  \0$aJazz$y1961-1970.
+=611  20$aIsle of Wight Festival$n(3rd :$d1970 :$cIsle of Wight (England)
+=655  \7$aDocumentary films.$2lcgft
+=655  \7$aConcert films.$2lcgft
+=700  1\$aLerner, Murray.
+=700  1\$aDavis, Miles.
+=700  1\$aHancock, Herbie,$d1940-
+=700  1\$aCorea, Chick.
+=700  1\$aSantana, Carlos.
+=700  1\$aJarrett, Keith.
+=700  1\$aMitchell, Joni.
+=700  1\$aLiebman, Dave.
+=710  2\$aEagle Vision (Firm)
+=710  2\$aMLF (Firm)
+=710  2\$aEagle Rock Entertainment.
+=711  2\$aIsle of Wight Festival$n(3rd :$d1970 :$cIsle of Wight (England)
+=910  \\$aRDA ENRICHED
+=910  \\$aMARS
+=945  \\$aemu mk
+=945  \\$a9DT$220080129
+=994  \\$aZ0$bEMU
+</field>
+</doc>
+<doc>
+<field name="id">990012699680302486</field>
+<field name="title">Miles, the autobiography  </field>
+<field name="creator">Davis, Miles.</field>
+<field name="author">Davis Miles</field>
+<field name="author">Troupe Quincy</field>
+<field name="author">Jones Paul R</field>
+<field name="author">Davis Miles</field>
+<field name="contributor">Troupe, Quincy.</field>
+<field name="contributor">Jones, Paul R.</field>
+<field name="contributor">Davis, Miles.</field>
+<field name="pubDate"></field>
+<field name="genre">African American author.</field>
+<field name="topic">Jazz musicians</field>
+<field name="language">English</field>
+<field name="resourceType">Book</field>
+<field name="loc_authority_name">n50035608</field>
+<field name="record">=LDR  ^^^^^nam^a22003618a^4500
 =001  990012699680302486
 =005  20160111211154.0
 =008  900131s1989^^^^nyuaf^^^^^^^^^001^0aeng^^
@@ -102,24 +350,222 @@
 =945  \\$aEMU bp
 =945  \\$a9DT$219940531
 =949  \\$a000011412396$bEMU$cwg$dML419.D39 A3 1989$tb$zba/bb
-    </field>
-  </doc>
-  <doc>
-    <field name="id">990022707350302486</field>
-    <field name="creator">Sidran, Ben.</field>
-    <field name="author">Sidran Ben</field>
-    <field name="contributor">Davis, Miles.</field>
-    <field name="author">Davis Miles</field>
-    <field name="contributor">Gillespie, Dizzy.</field>
-    <field name="author">Gillespie Dizzy</field>
-    <field name="title">Talking jazz</field>
-    <field name="pubDate">2006</field>
-    <field name="genre">Jazz</field>
-    <field name="genre">Jazz Musicians</field>
-    <field name="language">english</field>
-    <field name="resourceType">audio</field>
-    <field name="loc_authority_name">n81003495</field>
-    <field name="record">=LDR  ^^^^^cim^a22011054a^4500
+</field>
+</doc>
+<doc>
+<field name="id">990022592220302486</field>
+<field name="title">Miles Davis the cool jazz sound </field>
+<field name="author">Smight Jack</field>
+<field name="author">Herridge Robert</field>
+<field name="author">Davis Miles</field>
+<field name="author">Coltrane John</field>
+<field name="author">Kelly Wynton</field>
+<field name="author">Chambers Paul</field>
+<field name="author">Cobb Jimmy</field>
+<field name="author">Evans Gil</field>
+<field name="author">Royal Ernie</field>
+<field name="contributor">Smight, Jack.</field>
+<field name="contributor">Herridge, Robert.</field>
+<field name="contributor">Davis, Miles.</field>
+<field name="contributor">Coltrane, John.</field>
+<field name="contributor">Kelly, Wynton.</field>
+<field name="contributor">Chambers, Paul.</field>
+<field name="contributor">Cobb, Jimmy.</field>
+<field name="contributor">Evans, Gil.</field>
+<field name="contributor">Royal, Ernie.</field>
+<field name="pubDate">2004</field>
+<field name="genre">Concert films.</field>
+<field name="topic">Jazz</field>
+<field name="topic">Trumpet with jazz ensemble.</field>
+<field name="language">Unknown</field>
+<field name="resourceType">Video</field>
+<field name="record">=LDR  ^^^^^cgm^a2200673Ia^4500
+=001  990022592220302486
+=005  20160418233549.0
+=007  vd^bvaizs
+=008  051028p20041959pau026^g^^^^^^^^^^vlzxx^d
+=024  1\$a8436028690336
+=028  42$aDVD2869033$bEfor Films
+=028  42$a2869033$bEfor Films
+=035  \\$a(Aleph)002259222EMU01
+=035  9\$au3146184
+=035  \\$aocm62169821
+=035  \\$a(Sirsi) o62169821
+=035  \\$a(OCoLC)62169821
+=037  \\$aMZ00609629$bBWI
+=040  \\$aBKX$cBKX$dOCLCQ$dBTCTA$dOCLCG$dOCLCQ$dOCLCG$dUtOrBLW
+=050  \4$aM1366.D38$bM55 2004
+=082  04$a785.065$222
+=245  00$aMiles Davis$h[videorecording] :$bthe cool jazz sound /$cdirected by Jack Smight ; produced by Robert Herridge ; CBS Films.
+=246  30$aCool jazz sound
+=246  1\$iTitle at start of end credits:$aSound of Miles Davis
+=264  \2$bDistributed by Disconforme.
+=264  \1$aAndorra [Pa.?] :$bEfor Films,$c[2004]
+=300  \\$a1 videodisc (26 min.) :$bsound, black &amp; white ;$c4 3/4 in.
+=336  \\$atwo-dimensional moving image$btdi$2rdacontent
+=337  \\$avideo$bv$2rdamedia
+=338  \\$avideodisc$bvd$2rdacarrier
+=490  1\$aStars of jazz
+=538  \\$aDVD, all regions; Dolby digital 2.0.
+=511  0\$aMiles Davis sextet (Miles Davis, trumpet, Julian Adderley, alto sax, John Coltrane, tenor sax, Wynton Kelly, piano, Paul Chambers, bass, Jimmy Cobb, drums) ; the Gil Evans Orchestra.
+=508  \\$aMusic director and arranger, Gil Evans.
+=518  \\$aRecorded in 1959 as part of the Robert Herridge Theater.
+=520  \\$aMiles Davis with selected artists playing jazz standards.
+=505  00$tSo what --$tDuke --$tBlues for Pablo --$tNew rhumba.
+=650  \0$aJazz$y1951-1960.
+=650  \0$aTrumpet with jazz ensemble.
+=655  \7$aConcert films.$2lcgft
+=700  1\$aSmight, Jack.
+=700  1\$aHerridge, Robert.
+=700  1\$aDavis, Miles.
+=700  1\$aColtrane, John,$d1926-1967.
+=700  1\$aKelly, Wynton.
+=700  1\$aChambers, Paul,$d1935-1969.
+=700  1\$aCobb, Jimmy.
+=700  1\$aEvans, Gil,$d1912-1988.
+=700  1\$aRoyal, Ernie.
+=710  2\$aMiles Davis Sextet.
+=710  2\$aGil Evans Orchestra.
+=710  2\$aEFOR Films.
+=710  2\$aDisconforme (Firm)
+=830  \0$aStars of jazz.
+=910  \\$aRDA ENRICHED
+=910  \\$aMARS
+=945  \\$aemu mk
+=945  \\$a9DT$220090130
+=994  \\$aZ0$bEMU
+</field>
+</doc>
+<doc>
+<field name="id">990022707350302486</field>
+<field name="title">Talking jazz an oral history </field>
+<field name="creator">Sidran, Ben.</field>
+<field name="author">Sidran Ben</field>
+<field name="author">Davis Miles</field>
+<field name="author">Gillespie Dizzy</field>
+<field name="author">Cherry Don</field>
+<field name="author">Rodney Red</field>
+<field name="author">Hubbard Freddie</field>
+<field name="author">Marsalis Wynton</field>
+<field name="author">Woods Phil</field>
+<field name="author">Rollins Sonny</field>
+<field name="author">McLean Jackie</field>
+<field name="author">Griffin Johnny</field>
+<field name="author">Morgan Frank</field>
+<field name="author">Rouse Charlie</field>
+<field name="author">Murray David</field>
+<field name="author">Blythe Arthur</field>
+<field name="author">Lacy Steve</field>
+<field name="author">Marsalis Branford</field>
+<field name="author">Brecker Michael</field>
+<field name="author">Washington Grover</field>
+<field name="author">D'Rivera Paquito</field>
+<field name="author">Adams Pepper</field>
+<field name="author">Shepp Archie</field>
+<field name="author">Hancock Herbie</field>
+<field name="author">Jarrett Keith</field>
+<field name="author">Tyner McCoy</field>
+<field name="author">Brown Charles</field>
+<field name="author">McShann Jay</field>
+<field name="author">Dr John</field>
+<field name="author">Silver Horace</field>
+<field name="author">McCann Les</field>
+<field name="author">Sample Joe</field>
+<field name="author">Pullen Don</field>
+<field name="author">Harris Barry</field>
+<field name="author">Petrucciani Michel</field>
+<field name="author">Blakey Art</field>
+<field name="author">Roach Max</field>
+<field name="author">Lewis Mel</field>
+<field name="author">Williams Tony</field>
+<field name="author">Motian Paul</field>
+<field name="author">Gadd Steve</field>
+<field name="author">Davis Richard</field>
+<field name="author">Miller Marcus</field>
+<field name="author">Hendricks Jon</field>
+<field name="author">Carter Betty</field>
+<field name="author">McFerrin Bobby</field>
+<field name="author">Nordine Ken</field>
+<field name="author">Frishberg Dave</field>
+<field name="author">Fagen Donald</field>
+<field name="author">Allison Mose</field>
+<field name="author">Benson George</field>
+<field name="author">Scofield John</field>
+<field name="author">Khan Steve</field>
+<field name="author">Coryell Larry</field>
+<field name="author">Remler Emily</field>
+<field name="author">Eubanks Kevin</field>
+<field name="author">Evans Gil</field>
+<field name="author">Bley Carla</field>
+<field name="author">Fischer Clare</field>
+<field name="author">Gordon Max</field>
+<field name="author">Van Gelder Rudy</field>
+<field name="contributor">Davis, Miles.</field>
+<field name="contributor">Gillespie, Dizzy.</field>
+<field name="contributor">Cherry, Don.</field>
+<field name="contributor">Rodney, Red.</field>
+<field name="contributor">Hubbard, Freddie.</field>
+<field name="contributor">Marsalis, Wynton.</field>
+<field name="contributor">Woods, Phil.</field>
+<field name="contributor">Rollins, Sonny.</field>
+<field name="contributor">McLean, Jackie.</field>
+<field name="contributor">Griffin, Johnny.</field>
+<field name="contributor">Morgan, Frank.</field>
+<field name="contributor">Rouse, Charlie.</field>
+<field name="contributor">Murray, David.</field>
+<field name="contributor">Blythe, Arthur.</field>
+<field name="contributor">Lacy, Steve.</field>
+<field name="contributor">Marsalis, Branford.</field>
+<field name="contributor">Brecker, Michael.</field>
+<field name="contributor">Washington, Grover.</field>
+<field name="contributor">D'Rivera, Paquito.</field>
+<field name="contributor">Adams, Pepper.</field>
+<field name="contributor">Shepp, Archie.</field>
+<field name="contributor">Hancock, Herbie.</field>
+<field name="contributor">Jarrett, Keith.</field>
+<field name="contributor">Tyner, McCoy.</field>
+<field name="contributor">Brown, Charles.</field>
+<field name="contributor">McShann, Jay.</field>
+<field name="contributor">Dr. John.</field>
+<field name="contributor">Silver, Horace.</field>
+<field name="contributor">McCann, Les.</field>
+<field name="contributor">Sample, Joe.</field>
+<field name="contributor">Pullen, Don.</field>
+<field name="contributor">Harris, Barry.</field>
+<field name="contributor">Petrucciani, Michel.</field>
+<field name="contributor">Blakey, Art.</field>
+<field name="contributor">Roach, Max.</field>
+<field name="contributor">Lewis, Mel.</field>
+<field name="contributor">Williams, Tony.</field>
+<field name="contributor">Motian, Paul.</field>
+<field name="contributor">Gadd, Steve.</field>
+<field name="contributor">Davis, Richard.</field>
+<field name="contributor">Miller, Marcus.</field>
+<field name="contributor">Hendricks, Jon.</field>
+<field name="contributor">Carter, Betty.</field>
+<field name="contributor">McFerrin, Bobby.</field>
+<field name="contributor">Nordine, Ken.</field>
+<field name="contributor">Frishberg, Dave.</field>
+<field name="contributor">Fagen, Donald.</field>
+<field name="contributor">Allison, Mose.</field>
+<field name="contributor">Benson, George.</field>
+<field name="contributor">Scofield, John.</field>
+<field name="contributor">Khan, Steve.</field>
+<field name="contributor">Coryell, Larry.</field>
+<field name="contributor">Remler, Emily.</field>
+<field name="contributor">Eubanks, Kevin.</field>
+<field name="contributor">Evans, Gil.</field>
+<field name="contributor">Bley, Carla.</field>
+<field name="contributor">Fischer, Clare.</field>
+<field name="contributor">Gordon, Max.</field>
+<field name="contributor">Van Gelder, Rudy.</field>
+<field name="pubDate">2006</field>
+<field name="topic">Jazz</field>
+<field name="topic">Jazz musicians</field>
+<field name="language">English</field>
+<field name="resourceType">Sound recording</field>
+<field name="loc_authority_name">n81003495</field>
+<field name="record">=LDR  ^^^^^cim^a22011054a^4500
 =001  990022707350302486
 =005  20190719025017.0
 =007  sd^fsngnnmmned
@@ -210,23 +656,209 @@
 =945  \\$aemu pmb
 =945  \\$a9DT$220090223
 =994  \\$aZ0$bEMU
-    </field>
-  </doc>
-  <doc>
-    <field name="id">990035010160302486</field>
-    <field name="creator">Davis, Miles.</field>
-    <field name="author">Davis Miles</field>
-    <field name="contributor">Troupe, Quincy.</field>
-    <field name="author">Troupe Quincy</field>
-    <field name="title">Miles the autobiography</field>
-    <field name="pubDate">1989</field>
-    <field name="topic">Jazz musicians</field>
-    <field name="genre">Electronic books.</field>
-    <field name="language">english</field>
-    <field name="resourceType">online</field>
-    <field name="loc_authority_name">n50035608</field>
-    <field name="link">https://proxy.library.emory.edu/login?url=http://www.aspresolver.com/aspresolver.asp?BLTC;S7852</field>
-    <field name="record">=LDR  ^^^^^cam^a2200493Ma^4500
+</field>
+</doc>
+<doc>
+<field name="id">990024633150302486</field>
+<field name="title">Clawing at the limits of cool : Miles Davis, John Coltrane and the greatest jazz collaboration ever </field>
+<field name="creator">Griffin, Farah Jasmine.</field>
+<field name="author">Griffin Farah Jasmine</field>
+<field name="author">Washington Salim</field>
+<field name="contributor">Washington, Salim.</field>
+<field name="pubDate">2008</field>
+<field name="topic">Jazz</field>
+<field name="language">English</field>
+<field name="resourceType">Book</field>
+<field name="loc_authority_name">no95046194</field>
+<field name="record">=LDR  ^^^^^cam^a2200601Ia^4500
+=001  990024633150302486
+=005  20160419000825.0
+=008  080228s2008^^^^nyua^^^^^bk^^^001^0deng^^
+=010  \\$a2008009313
+=015  \\$aGBA865925$2bnb
+=016  7\$a014614245$2Uk
+=019  \\$a181601309
+=020  \\$a0312327854
+=020  \\$a9780312327859
+=035  \\$a(Aleph)002463315EMU01
+=035  9\$au3375466
+=035  \\$aocn212893657
+=035  \\$a(Sirsi) o212893657
+=035  \\$a(OCoLC)212893657
+=035  \\$ay99935345003
+=040  \\$aDLC$cDLC$dBAKER$dBTCTA$dYDXCP$dUKM$dC#P$dBWX$dCDX$dJED$dIK2$dIXA$dABG$dRES$dTSU$dSMP$dIG#$dCQU$dUtOrBLW
+=043  \\$an-us---
+=049  \\$aEMUU
+=050  00$aML3508$b.G75 2008
+=082  00$a781.65/50922$222
+=100  1\$aGriffin, Farah Jasmine.
+=245  10$aClawing at the limits of cool :$bMiles Davis, John Coltrane and the greatest jazz collaboration ever /$cFarah Jasmine Griffin, Salim Washington.
+=246  3\$aMiles Davis, John Coltrane and the greatest jazz collaboration ever
+=250  \\$a1st Thomas Dunne books edition.
+=264  \1$aNew York :$bThomas Dunne Books,$c2008.
+=300  \\$a294 pages :$billustrations ;$c22 cm
+=336  \\$atext$btxt$2rdacontent
+=337  \\$aunmediated$bn$2rdamedia
+=338  \\$avolume$bnc$2rdacarrier
+=504  \\$aIncludes bibliographical references (pages [273]-276), discography (pages [277]-278), and index.
+=505  0\$aThe head -- Pass it on -- The birth of a new freedom -- Struggle and ascent -- Interlude -- Clawing at the limits of cool -- The tag.
+=650  \0$aJazz$xHistory and criticism.
+=600  10$aDavis, Miles.
+=600  10$aColtrane, John,$d1926-1967.
+=610  20$aMiles Davis Quintet.
+=610  20$aMiles Davis Sextet.
+=700  1\$aWashington, Salim.
+=856  42$3Contributor biographical information$uhttp://www.loc.gov/catdir/enhancements/fy0834/2008009313-b.html
+=856  42$3Publisher description$uhttp://www.loc.gov/catdir/enhancements/fy0834/2008009313-d.html
+=856  41$3Sample text$uhttp://www.loc.gov/catdir/enhancements/fy0901/2008009313-s.html
+=856  41$3Table of contents only$uhttp://www.loc.gov/catdir/toc/ecip0812/2008009313.html
+=910  \\$aRDA ENRICHED
+=910  \\$aMARS
+=940  \\$aPROMPTCATF
+=945  \\$a9DT$220100119
+=949  \\$hEMUWG$i010002461480$p$24.95$zPROMPTCATF
+=959  \\$a854580$c2009-12-03$d$20.71$e1$f99935345003$g2756738$hHIST US BOOKS
+=994  \\$a92$bEMU
+</field>
+</doc>
+<doc>
+<field name="id">990029961880302486</field>
+<field name="title">كتاب آراء اهل المدينة الفاضيلة </field>
+<field name="creator">فارابي</field>
+<field name="author">فارابي</field>
+<field name="author">نادر البير نصري</field>
+<field name="contributor">نادر، البير نصري</field>
+<field name="pubDate">1996</field>
+<field name="topic">Philosophy, Arab.</field>
+<field name="topic">Utopias</field>
+<field name="topic">Philosophy, Medieval.</field>
+<field name="language">Arabic</field>
+<field name="resourceType">Book</field>
+<field name="loc_authority_name">n80153725</field>
+<field name="record">=LDR  ^^^^^cam^a2200529Ia^4500
+=001  990029961880302486
+=005  20160111235153.0
+=008  070314s1996^^^^le^^^^^^^b^^^^001^0^ara^d
+=019  \\$a181069821
+=020  \\$a2721480553
+=020  \\$a9782721480552
+=035  \\$a(Aleph)002996188EMU01
+=035  \\$a(OCoLC)85853951$z(OCoLC)181069821
+=040  \\$aCLU$cCLU$dEMU$dUtOrBLW
+=041  0\$aara$afre
+=049  \\$aEMUU
+=050  \4$aHX811$b1996 .F26
+=066  \\$c(3
+=100  0\$6880-01$aFārābī.
+=880  0\$6100-01/(3/r$aفارابي
+=240  10$6880-02$aĀrāʼ ahl al-madīnah al-faḍīlah
+=880  10$6240-02/(3/r$aآراء اهل المدينة الفاضيلة
+=245  10$6880-03$aKitāb arāʼ ahl al-madīnah al-fāḍīlah /$cAbū Naṣr al-Fārābī ; qaddama lahu wa-ʻallaqa ʻalayh Albīr Naṣrī Nādir.
+=880  10$6245-03/(3/r$aكتاب آراء اهل المدينة الفاضيلة$cابو نصر الفارابي ؛ قدم له وعلق عليه البير نصري نادر.
+=250  \\$6880-04$aal-Ṭabʻah 7.
+=880  \\$6250-04/(3/r$aالطبعة 7.
+=264  \1$6880-05$aBayrūt, Lubnān :$bDār al-Mashriq :$bAl-Tawzīʻ al-Maktabah al-Sharqīyah,$c1996.
+=880  \1$6264-05/(3/r$aبيروت، لبنان :$bدار المشرق :$bالتوزيع المكتبة الشرقية،$c1996.
+=300  \\$a187 pages ;$c24 cm
+=336  \\$atext$btxt$2rdacontent
+=337  \\$aunmediated$bn$2rdamedia
+=338  \\$avolume$bnc$2rdacarrier
+=490  1\$6880-06$aNuṣūṣ wa-durūs. Majmūʻah al-falsafīyah
+=880  1\$6490-06/(3/r$aنصوص ودروس. مجموعة الفلسفية
+=504  \\$aIncludes bibliographical references and indexes.
+=546  \\$aIn Arabic with an Arabic-French glossary.
+=650  \0$aUtopias$vEarly works to 1800.
+=650  \0$aPhilosophy, Arab.
+=650  \0$aPhilosophy, Medieval.
+=700  1\$6880-07$aNādir, Albīr Naṣrī.
+=880  1\$6700-07/(3/r$aنادر، البير نصري
+=830  \0$6880-08$aNuṣūṣ wa-durūs.$pMajmūʻah al-falsafīyah.
+=880  \0$6830-08/(3/r$aنصوص ودروس.$pمجموعة الفلسفية.
+=910  \\$aRDA ENRICHED
+=910  \\$aMARS
+=945  \\$aEMU$bhf$220111212
+=994  \\$aC0$bEMU
+</field>
+</doc>
+<doc>
+<field name="id">990031150350302486</field>
+<field name="title">Fotografie für Architekten : die Fotosammlung des Architekturmuseums der TU München = Photography for architects : the photographic collection of the Architekturmuseum der TU München </field>
+<field name="author">Nerdinger Winfried</field>
+<field name="author">Böhm Hanna</field>
+<field name="author">Meissner Irene</field>
+<field name="contributor">Nerdinger, Winfried.</field>
+<field name="contributor">Böhm, Hanna.</field>
+<field name="contributor">Meissner, Irene.</field>
+<field name="pubDate">2011</field>
+<field name="topic">Architectural photography</field>
+<field name="topic">Photography</field>
+<field name="language">English</field>
+<field name="resourceType">Book</field>
+<field name="record">=LDR  ^^^^^cam^a2200589^a^4500
+=001  990031150350302486
+=005  20160419005534.0
+=008  110615s2011^^^^gw^a^^^^^bc^^^001^0deng^c
+=020  \\$a3865609899
+=020  \\$a3863350022 (museum ed.)
+=020  \\$a9783865609892
+=020  \\$a9783863350024 (museum ed.)
+=035  \\$a(Aleph)003115035EMU01
+=035  \\$ay99949037732
+=035  \\$a(OCoLC)731901483
+=040  \\$aERASA$cERASA$dOCLCQ$dVVP$dZCU$dYDXCP$dPUL$dVRC$dSTF$dUtOrBLW
+=041  0\$ager$aeng
+=042  \\$apcc
+=043  \\$ae-gx---
+=049  \\$aEMUA$b010002584623
+=050  \4$aTR659$b.F67 2011
+=082  04$a720
+=245  00$aFotografie für Architekten :$bdie Fotosammlung des Architekturmuseums der TU München = Photography for architects : the photographic collection of the Architekturmuseum der TU München /$c[herausgegeben by Winfried Nerdinger ; Mitarbeit, Hanna Böhm and Irene Meissner].
+=246  30$aPhotography for architects :$bthe photographic collection of the Architekturmuseum der TU München
+=264  \2$aNew York, NY :$bD.A.P./Distributed Art Publishers.
+=264  \4$c©2011
+=264  \1$aKöln :$bVerlag der Buchhandlung Walther König,$c[2011]
+=300  \\$a239 pages :$billustrations (2 color) ;$c31 cm
+=336  \\$atext$btxt$2rdacontent
+=337  \\$aunmediated$bn$2rdamedia
+=338  \\$avolume$bnc$2rdacarrier
+=500  \\$aPublished on the occasion of the exhibition held at the Architekturmuseum der TU München in the Pinakothek der Moderne, Munich, Mar. 31-June 19, 2011.
+=546  \\$aGerman and English.
+=504  \\$aIncludes bibliographical references and index of photographers.
+=650  \0$aArchitectural photography$vExhibitions.
+=650  \0$aPhotography$zGermany$vExhibitions.
+=610  20$aTechnische Universität München.$bArchitekturmuseum$vExhibitions.
+=700  1\$aNerdinger, Winfried.
+=700  1\$aBöhm, Hanna.
+=700  1\$aMeissner, Irene.
+=710  2\$aTechnische Universität München.$bArchitekturmuseum.
+=856  42$mB:DE-101$qapplication/pdf$uhttp://d-nb.info/1010835513/04$3Inhaltsverzeichnis
+=856  42$mX:MVB$qtext/html$uhttp://deposit.d-nb.de/cgi-bin/dokserv?id=3709134&amp;prov=M&amp;dok_var=1&amp;dok_ext=htm$3Inhaltstext
+=900  \\$a7074069
+=910  \\$aRDA ENRICHED
+=910  \\$aPROMPTCATF
+=910  \\$aMARS
+=940  \\$aPROMPTCATF
+=945  \\$aEMU$220120717
+=980  \\$a20120705$b65.00$d99949037732$e53.95$f949201$g1$h7074069
+=981  \\$bAHMODERN B
+=994  \\$a92$bEMU
+</field>
+</doc>
+<doc>
+<field name="id">990035010160302486</field>
+<field name="title">Miles, the autobiography </field>
+<field name="creator">Davis, Miles.</field>
+<field name="author">Davis Miles</field>
+<field name="author">Troupe Quincy</field>
+<field name="contributor">Troupe, Quincy.</field>
+<field name="pubDate">1989</field>
+<field name="genre">Electronic books.</field>
+<field name="topic">Jazz musicians</field>
+<field name="language">English</field>
+<field name="resourceType">Book</field>
+<field name="link">http://proxy.library.emory.edu/login?url=http://www.aspresolver.com/aspresolver.asp?BLTC;S7852</field>
+<field name="loc_authority_name">n50035608</field>
+<field name="record">=LDR  ^^^^^cam^a2200493Ma^4500
 =001  990035010160302486
 =005  20160112002958.0
 =006  m^^^^^o^^d^^^^^^^^
@@ -266,143 +898,36 @@
 =945  \\$aEMU$bmk$220141006
 =949  \\$bONLNE$c02
 =994  \\$aC0$bEMU
-    </field>
-  </doc>
-  <doc>
-    <field name="id">990006882230302486</field>
-    <field name="creator">أبو ديب، الصيد</field>
-    <field name="title">معجم المؤلفات الليبية المطبوعة في الأدب الحديث</field>
-    <field name="pubDate">2006</field>
-    <field name="genre">Arabic literature</field>
-    <field name="language">arabic</field>
-    <field name="resourceType">book</field>
-    <field name="loc_authority_name">n2006203256</field>
-    <field name="record">=LDR  ^^^^^cam^a22004574a^4500
-=001  990006882230302486
-=005  20160418210101.0
-=008  070124s2006^^^^ly^^^^^^^b^^^f000^0^ararc
-=010  \\$a2007330349
-=020  \\$a9959381536
-=020  \\$a9789959381538
-=035  \\$a(Aleph)000688223EMU01
-=035  9\$au2911164
-=035  \\$aocm80904367
-=035  \\$a(Sirsi) o80904367
-=035  \\$a(OCoLC)80904367
-=040  \\$aDLC-R$cDLC$dIUL$dEMU$dUtOrBLW
-=042  \\$alcode$apcc
-=043  \\$af-ly---
-=049  \\$aEMUU
-=050  \4$aPJ8222$b.A28 2006
-=100  1\$6880-01$aAbū Dīb, al-Ṣayd.
-=880  1\$6100-01//r$aأبو ديب، الصيد.
-=245  10$6880-02$aMuʻjam al-muʼallafāt al-Lībīyah al-maṭbūʻah fī al-adab al-ḥadīth /$ciʻdād al-Ṣayd Abū Dī̈b.
-=880  10$6245-02//r$aمعجم المؤلفات الليبية المطبوعة في الأدب الحديث /$cإعداد الصيد أبو ديب.
-=264  \1$6880-03$aSirt :$bMajlis al-Thaqāfah al-ʻĀmm,$c2006.
-=880  \1$6264-03//r$aسرت :$bمجلس الثقافة العام،$c2006.
-=300  \\$a207 pages ;$c24 cm
-=336  \\$atext$btxt$2rdacontent
-=337  \\$aunmediated$bn$2rdamedia
-=338  \\$avolume$bnc$2rdacarrier
-=504  \\$aIncludes bibliographical references.
-=520  \\$aArabic literature; Libya; bibliography.
-=650  \0$aArabic literature$zLibya$vBibliography.
-=650  \0$aArabic literature$y20th century$vBibliography.
-=910  \\$aRDA ENRICHED
-=910  \\$aMARS
-=945  \\$aEMU haf
-=945  \\$a9DT$220070530
-=949  \\$wLC$i010001241160$mGENERAL$lSTACKS$rY$sY$tBOOK
-=994  \\$aC0$bEMU
-    </field>
-  </doc>
-  <doc>
-    <field name="id">990022592220302486</field>
-    <field name="title">Miles Davis the cool jazz sound</field>
-    <field name="pubDate">2004</field>
-    <field name="topic">Jazz</field>
-    <field name="topic">Trumpet with jazz ensemble.</field>
-    <field name="genre">Concert films</field>
-    <field name="resourceType">video</field>
-    <field name="contributor">Coltrane, John.</field>
-    <field name="language">english</field>
-    <field name="author">Coltrane John</field>
-    <field name="contributor">Evans, Gil.</field>
-    <field name="author">Evans Gil</field>
-    <field name="record">=LDR  ^^^^^cgm^a2200673Ia^4500
-=001  990022592220302486
-=005  20160418233549.0
-=007  vd^bvaizs
-=008  051028p20041959pau026^g^^^^^^^^^^vlzxx^d
-=024  1\$a8436028690336
-=028  42$aDVD2869033$bEfor Films
-=028  42$a2869033$bEfor Films
-=035  \\$a(Aleph)002259222EMU01
-=035  9\$au3146184
-=035  \\$aocm62169821
-=035  \\$a(Sirsi) o62169821
-=035  \\$a(OCoLC)62169821
-=037  \\$aMZ00609629$bBWI
-=040  \\$aBKX$cBKX$dOCLCQ$dBTCTA$dOCLCG$dOCLCQ$dOCLCG$dUtOrBLW
-=050  \4$aM1366.D38$bM55 2004
-=082  04$a785.065$222
-=245  00$aMiles Davis$h[videorecording] :$bthe cool jazz sound /$cdirected by Jack Smight ; produced by Robert Herridge ; CBS Films.
-=246  30$aCool jazz sound
-=246  1\$iTitle at start of end credits:$aSound of Miles Davis
-=264  \2$bDistributed by Disconforme.
-=264  \1$aAndorra [Pa.?] :$bEfor Films,$c[2004]
-=300  \\$a1 videodisc (26 min.) :$bsound, black &amp; white ;$c4 3/4 in.
-=336  \\$atwo-dimensional moving image$btdi$2rdacontent
-=337  \\$avideo$bv$2rdamedia
-=338  \\$avideodisc$bvd$2rdacarrier
-=490  1\$aStars of jazz
-=538  \\$aDVD, all regions; Dolby digital 2.0.
-=511  0\$aMiles Davis sextet (Miles Davis, trumpet, Julian Adderley, alto sax, John Coltrane, tenor sax, Wynton Kelly, piano, Paul Chambers, bass, Jimmy Cobb, drums) ; the Gil Evans Orchestra.
-=508  \\$aMusic director and arranger, Gil Evans.
-=518  \\$aRecorded in 1959 as part of the Robert Herridge Theater.
-=520  \\$aMiles Davis with selected artists playing jazz standards.
-=505  00$tSo what --$tDuke --$tBlues for Pablo --$tNew rhumba.
-=650  \0$aJazz$y1951-1960.
-=650  \0$aTrumpet with jazz ensemble.
-=655  \7$aConcert films.$2lcgft
-=700  1\$aSmight, Jack.
-=700  1\$aHerridge, Robert.
-=700  1\$aDavis, Miles.
-=700  1\$aColtrane, John,$d1926-1967.
-=700  1\$aKelly, Wynton.
-=700  1\$aChambers, Paul,$d1935-1969.
-=700  1\$aCobb, Jimmy.
-=700  1\$aEvans, Gil,$d1912-1988.
-=700  1\$aRoyal, Ernie.
-=710  2\$aMiles Davis Sextet.
-=710  2\$aGil Evans Orchestra.
-=710  2\$aEFOR Films.
-=710  2\$aDisconforme (Firm)
-=830  \0$aStars of jazz.
-=910  \\$aRDA ENRICHED
-=910  \\$aMARS
-=945  \\$aemu mk
-=945  \\$a9DT$220090130
-=994  \\$aZ0$bEMU
-    </field>
-  </doc>
+</field>
+</doc>
 <doc>
-    <field name="id">9936709901402486</field>
-    <field name="creator">Davis, Miles.</field>
-    <field name="author">Davis Miles</field>
-    <field name="title">The magic of Miles Davis jazz play-a-long for all musicians melodies chords transposed parts for all instrumentalists</field>
-    <field name="pubDate">1994</field>
-    <field name="language">english</field>
-    <field name="genre">Jazz</field>
-    <field name="genre">Lead sheets</field>
-    <field name="topic">Jazz lead sheets</field>
-    <field name="contributor">Aebersold, Jamey.</field>
-    <field name="author">Aebersold Jamey</field>
-    <field name="contributor">Feldman, Victor.</field>
-    <field name="author">Feldman Victor</field>
-    <field name="resourceType">score</field>
-    <field name="loc_authority_name">n50035608</field>
-    <field name="record">=LDR  ^^^^^ncm^a2200709Ki^4500
+<field name="id">9936709901402486</field>
+<field name="title">The magic of Miles Davis : jazz play-a-long for all musicians : melodies, chords, transposed parts for all instrumentalists </field>
+<field name="creator">Davis, Miles.</field>
+<field name="author">Davis Miles</field>
+<field name="author">Aebersold Jamey</field>
+<field name="author">Levine Mark</field>
+<field name="author">Coolman Todd</field>
+<field name="author">Davis Steve</field>
+<field name="author">Feldman Victor</field>
+<field name="author">Carter Ron</field>
+<field name="contributor">Aebersold, Jamey.</field>
+<field name="contributor">Levine, Mark.</field>
+<field name="contributor">Coolman, Todd.</field>
+<field name="contributor">Davis, Steve.</field>
+<field name="contributor">Feldman, Victor.</field>
+<field name="contributor">Carter, Ron.</field>
+<field name="pubDate">between 2010 and 2018</field>
+<field name="genre">Jazz.</field>
+<field name="genre">Recorded accompaniments.</field>
+<field name="genre">Lead sheets.</field>
+<field name="topic">Improvisation (Music)</field>
+<field name="topic">Recorded accompaniments.</field>
+<field name="topic">Jazz</field>
+<field name="language">Unknown</field>
+<field name="resourceType">Score</field>
+<field name="loc_authority_name">n50035608</field>
+<field name="record">=LDR  ^^^^^ncm^a2200709Ki^4500
 =001  9936709901402486
 =005  20190406063102.0
 =006  jjznn^^^^^^^^^^^n
@@ -460,238 +985,21 @@
 =910  \\$aMARS
 =945  \\$aEMU$bmk$220180827
 =994  \\$aC0$bEMU
-    </field>
+</field>
 </doc>
 <doc>
-    <field name="id">990007346960302486</field>
-    <field name="title">Miles electric a different kind of blue</field>
-    <field name="pubDate">2004</field>
-    <field name="genre">Documentary films</field>
-    <field name="language">english</field>
-    <field name="genre">Concert films</field>
-    <field name="topic">Jazz musicians</field>
-    <field name="topic">Trumpet players</field>
-    <field name="topic">Jazz</field>
-    <field name="contributor">Davis, Miles.</field>
-    <field name="author">Davis Miles</field>
-    <field name="contributor">Corea, Chick.</field>
-    <field name="author">Corea Chick</field>
-    <field name="resourceType">video</field>
-    <field name="record">=LDR  ^^^^^cgm^a2200757Ia^4500
-=001  990007346960302486
-=005  20181019153046.0
-=007  vd^cvaizq
-=008  041213s2004^^^^xxu123^g^^^^^^^^^^vleng^d
-=024  1\$a801213902095
-=028  42$aEE39020-9$bRed Distribution
-=035  \\$a(Aleph)000734696EMU01
-=035  9\$au2975269
-=035  \\$aocm57217818
-=035  \\$a(Sirsi) o57217818
-=035  \\$a(OCoLC)57217818
-=037  \\$bMidwest Tapes$nhttp://www.midwesttapes.com
-=040  \\$aTEFMT$cTEFMT$dRCS$dOCLCQ$dMDY$dOCL$dBTCTA$dLVB$dRCS$dUtOrBLW
-=041  1\$aeng$jeng$jspa$jfre$heng
-=043  \\$an-us---
-=082  04$a788.9/2165/092$222
-=090  \\$aML419.D39$bM56 2004
-=245  00$aMiles electric$h[videorecording] :$ba different kind of blue /$cEagle Vision presents a Murray Lerner film ; produced &amp; directed by Murray Lerner ; an MLF production in association with Eagle Rock Entertainment, Ltd.
-=246  30$aDifferent kind of blue
-=264  \1$a[United States] :$bEagle Eye Media,$c[2004]
-=264  \4$c©2004
-=300  \\$a1 videodisc (approximately 123 min.) :$bsound, color ;$c4 3/4 in. +$eprogram notes.
-=336  \\$atwo-dimensional moving image$btdi$2rdacontent
-=337  \\$avideo$bv$2rdamedia
-=338  \\$avideodisc$bvd$2rdacarrier
-=340  \\$b4 3/4 in.
-=344  \\$adigital$boptical$gstereo$hDolby
-=347  \\$avideo file
-=538  \\$aDVD, regions 1 and 4; 4:3 aspect ratio; DTS 5.1, Dolby 5.1 or PCM stereo sound; full screen presentation; Playstation 2 and XBOX compatible.
-=546  \\$aIn English with optional English, Spanish or French subtitles.
-=511  0\$aMiles Davis, Herbie Hancock, Chick Corea, Carlos Santana, Joni Mitchell, Keith Jarrett, Dave Liebman, Stanley Crouch.
-=508  \\$aExecutive producers. Terry Shand, Geoff Kempin ; editors, Edward Goldberg, Einar Westerlund ; cameramen, Henry Adebonojo ... [et al.]
-=500  \\$aSpecial features: additional interview footage; first electric period sessionography.
-=500  \\$aProgram notes (6 p. : port.) inserted in container.
-=520  \\$aDiscusses Miles Davis' music of the late 1960s-early 1970s, with commentary from musicians Chick Corea, Carlos Santana, Joni Mitchell and others; also includes Davis's complete Aug. 29, 1970 performance at the Isle of Wight.
-=600  10$aDavis, Miles.
-=650  \0$aJazz musicians$zUnited States.
-=650  \0$aTrumpet players$zUnited States.
-=650  \0$aJazz$y1961-1970$xHistory and criticism.
-=650  \0$aJazz$y1971-1980$xHistory and criticism.
-=650  \0$aJazz$y1961-1970.
-=611  20$aIsle of Wight Festival$n(3rd :$d1970 :$cIsle of Wight (England)
-=655  \7$aDocumentary films.$2lcgft
-=655  \7$aConcert films.$2lcgft
-=700  1\$aLerner, Murray.
-=700  1\$aDavis, Miles.
-=700  1\$aHancock, Herbie,$d1940-
-=700  1\$aCorea, Chick.
-=700  1\$aSantana, Carlos.
-=700  1\$aJarrett, Keith.
-=700  1\$aMitchell, Joni.
-=700  1\$aLiebman, Dave.
-=710  2\$aEagle Vision (Firm)
-=710  2\$aMLF (Firm)
-=710  2\$aEagle Rock Entertainment.
-=711  2\$aIsle of Wight Festival$n(3rd :$d1970 :$cIsle of Wight (England)
-=910  \\$aRDA ENRICHED
-=910  \\$aMARS
-=945  \\$aemu mk
-=945  \\$a9DT$220080129
-=994  \\$aZ0$bEMU</field>
-</doc>
-<doc>
-    <field name="id">990000000000302486</field>
-    <field name="creator">with the</field>
-    <field name="title">on a from with</field>
-    <field name="language">english</field>
-    <field name="pubDate">2004</field>
-    <field name="genre">Documentary films</field>
-    <field name="genre">Concert films</field>
-    <field name="topic">Jazz musicians</field>
-    <field name="record">=LDR  ^^^^^cgm^a2200757Ia^4500
-=001  990007346960302486
-=005  20181019153046.0
-=007  vd^cvaizq
-=008  041213s2004^^^^xxu123^g^^^^^^^^^^vleng^d
-=024  1\$a801213902095
-=028  42$aEE39020-9$bRed Distribution
-=035  \\$a(Aleph)000734696EMU01</field>
-</doc>
-<doc>
-    <field name="id">990031150350302486</field>
-    <field name="title">Fotografie für Architekten die Fotosammlung des Architekturmuseums der TU München  Photography for architects  the photographic collection of the Architekturmuseum der TU München</field>
-    <field name="pubDate">2011</field>
-    <field name="topic">Architectural photography</field>
-    <field name="topic">Photography</field>
-    <field name="contributor">Nerdinger, Winfried.</field>
-    <field name="author">Nerdinger Winfried</field>
-    <field name="contributor">Böhm, Hanna.</field>
-    <field name="author">Böhm Hanna</field>
-    <field name="language">english</field>
-    <field name="resourceType">book</field>
-    <field name="record">=LDR  ^^^^^cam^a2200589^a^4500
-=001  990031150350302486
-=005  20160419005534.0
-=008  110615s2011^^^^gw^a^^^^^bc^^^001^0deng^c
-=020  \\$a3865609899
-=020  \\$a3863350022 (museum ed.)
-=020  \\$a9783865609892
-=020  \\$a9783863350024 (museum ed.)
-=035  \\$a(Aleph)003115035EMU01
-=035  \\$ay99949037732
-=035  \\$a(OCoLC)731901483
-=040  \\$aERASA$cERASA$dOCLCQ$dVVP$dZCU$dYDXCP$dPUL$dVRC$dSTF$dUtOrBLW
-=041  0\$ager$aeng
-=042  \\$apcc
-=043  \\$ae-gx---
-=049  \\$aEMUA$b010002584623
-=050  \4$aTR659$b.F67 2011
-=082  04$a720
-=245  00$aFotografie für Architekten :$bdie Fotosammlung des Architekturmuseums der TU München = Photography for architects : the photographic collection of the Architekturmuseum der TU München /$c[herausgegeben by Winfried Nerdinger ; Mitarbeit, Hanna Böhm and Irene Meissner].
-=246  30$aPhotography for architects :$bthe photographic collection of the Architekturmuseum der TU München
-=264  \2$aNew York, NY :$bD.A.P./Distributed Art Publishers.
-=264  \4$c©2011
-=264  \1$aKöln :$bVerlag der Buchhandlung Walther König,$c[2011]
-=300  \\$a239 pages :$billustrations (2 color) ;$c31 cm
-=336  \\$atext$btxt$2rdacontent
-=337  \\$aunmediated$bn$2rdamedia
-=338  \\$avolume$bnc$2rdacarrier
-=500  \\$aPublished on the occasion of the exhibition held at the Architekturmuseum der TU München in the Pinakothek der Moderne, Munich, Mar. 31-June 19, 2011.
-=546  \\$aGerman and English.
-=504  \\$aIncludes bibliographical references and index of photographers.
-=650  \0$aArchitectural photography$vExhibitions.
-=650  \0$aPhotography$zGermany$vExhibitions.
-=610  20$aTechnische Universität München.$bArchitekturmuseum$vExhibitions.
-=700  1\$aNerdinger, Winfried.
-=700  1\$aBöhm, Hanna.
-=700  1\$aMeissner, Irene.
-=710  2\$aTechnische Universität München.$bArchitekturmuseum.
-=856  42$mB:DE-101$qapplication/pdf$uhttp://d-nb.info/1010835513/04$3Inhaltsverzeichnis
-=856  42$mX:MVB$qtext/html$uhttp://deposit.d-nb.de/cgi-bin/dokserv?id=3709134&amp;prov=M&amp;dok_var=1&amp;dok_ext=htm$3Inhaltstext
-=900  \\$a7074069
-=910  \\$aRDA ENRICHED
-=910  \\$aPROMPTCATF
-=910  \\$aMARS
-=940  \\$aPROMPTCATF
-=945  \\$aEMU$220120717
-=980  \\$a20120705$b65.00$d99949037732$e53.95$f949201$g1$h7074069
-=981  \\$bAHMODERN B
-=994  \\$a92$bEMU</field>
-</doc>
-<doc>
-    <field name="id">990024633150302486</field>
-    <field name="creator">Griffin, Farah Jasmine.</field>
-    <field name="author">Griffin Farah Jasmine</field>
-    <field name="title">Clawing at the limits of cool Miles Davis John Coltrane and the greatest jazz collaboration ever</field>
-    <field name="resourceType">book</field>
-    <field name="language">english</field>
-    <field name="pubDate">2008</field>
-    <field name="topic">Jazz History and criticism</field>
-    <field name="contributor">Washington, Salim.</field>
-    <field name="author">Washington Salim</field>
-    <field name="record">=LDR  ^^^^^cam^a2200601Ia^4500
-=001  990024633150302486
-=005  20160419000825.0
-=008  080228s2008^^^^nyua^^^^^bk^^^001^0deng^^
-=010  \\$a2008009313
-=015  \\$aGBA865925$2bnb
-=016  7\$a014614245$2Uk
-=019  \\$a181601309
-=020  \\$a0312327854
-=020  \\$a9780312327859
-=035  \\$a(Aleph)002463315EMU01
-=035  9\$au3375466
-=035  \\$aocn212893657
-=035  \\$a(Sirsi) o212893657
-=035  \\$a(OCoLC)212893657
-=035  \\$ay99935345003
-=040  \\$aDLC$cDLC$dBAKER$dBTCTA$dYDXCP$dUKM$dC#P$dBWX$dCDX$dJED$dIK2$dIXA$dABG$dRES$dTSU$dSMP$dIG#$dCQU$dUtOrBLW
-=043  \\$an-us---
-=049  \\$aEMUU
-=050  00$aML3508$b.G75 2008
-=082  00$a781.65/50922$222
-=100  1\$aGriffin, Farah Jasmine.
-=245  10$aClawing at the limits of cool :$bMiles Davis, John Coltrane and the greatest jazz collaboration ever /$cFarah Jasmine Griffin, Salim Washington.
-=246  3\$aMiles Davis, John Coltrane and the greatest jazz collaboration ever
-=250  \\$a1st Thomas Dunne books edition.
-=264  \1$aNew York :$bThomas Dunne Books,$c2008.
-=300  \\$a294 pages :$billustrations ;$c22 cm
-=336  \\$atext$btxt$2rdacontent
-=337  \\$aunmediated$bn$2rdamedia
-=338  \\$avolume$bnc$2rdacarrier
-=504  \\$aIncludes bibliographical references (pages [273]-276), discography (pages [277]-278), and index.
-=505  0\$aThe head -- Pass it on -- The birth of a new freedom -- Struggle and ascent -- Interlude -- Clawing at the limits of cool -- The tag.
-=650  \0$aJazz$xHistory and criticism.
-=600  10$aDavis, Miles.
-=600  10$aColtrane, John,$d1926-1967.
-=610  20$aMiles Davis Quintet.
-=610  20$aMiles Davis Sextet.
-=856  42$3Contributor biographical information$uhttp://www.loc.gov/catdir/enhancements/fy0834/2008009313-b.html
-=856  42$3Publisher description$uhttp://www.loc.gov/catdir/enhancements/fy0834/2008009313-d.html
-=856  41$3Sample text$uhttp://www.loc.gov/catdir/enhancements/fy0901/2008009313-s.html
-=856  41$3Table of contents only$uhttp://www.loc.gov/catdir/toc/ecip0812/2008009313.html
-=910  \\$aRDA ENRICHED
-=910  \\$aMARS
-=940  \\$aPROMPTCATF
-=945  \\$a9DT$220100119
-=949  \\$hEMUWG$i010002461480$p$24.95$zPROMPTCATF
-=959  \\$a854580$c2009-12-03$d$20.71$e1$f99935345003$g2756738$hHIST US BOOKS
-=994  \\$a92$bEMU
-    </field>
-</doc>
-<doc>
-    <field name="id">9936776158702486</field>
-    <field name="creator">毛中根.</field>
-    <field name="author">毛中根</field>
-    <field name="title">中国文化消费提升研究 =Promoting cultural consumption in China</field>
-    <field name="resourceType">book</field>
-    <field name="language">chinese</field>
-    <field name="pubDate">2018</field>
-    <field name="topic">Consumption (Economics)</field>
-    <field name="topic">Cultural industries</field>
-    <field name="contributor">Washington, Salim.</field>
-    <field name="record">=LDR  ^^^^^cam^a2200529Ii^4500
+<field name="id">9936776158702486</field>
+<field name="title">中国文化消费提升研究 = Promoting cultural consumption in China </field>
+<field name="creator">毛中根,</field>
+<field name="author">毛中根</field>
+<field name="pubDate">2018</field>
+<field name="topic">Culture</field>
+<field name="topic">Cultural industries.</field>
+<field name="topic">Cultural industries</field>
+<field name="topic">Consumption (Economics)</field>
+<field name="language">Chinese</field>
+<field name="resourceType">Book</field>
+<field name="record">=LDR  ^^^^^cam^a2200529Ii^4500
 =001  9936776158702486
 =005  20190518030244.0
 =008  180528s2018^^^^cc^a^^^^^b^^^^001^0^chi^d
@@ -704,8 +1012,10 @@
 =043  \\$aa-cc---
 =049  \\$aEMUU
 =050  \4$aHC430.C6$bM369 2018
-=100  1\$a毛中根,$eauthor.
-=245  10$a中国文化消费提升研究 =$bPromoting cultural consumption in China /$c毛中根等著.
+=100  1\$6880-01$aMao, Zhonggen,$eauthor.
+=880  1\$6100-01$a毛中根,$eauthor.
+=245  10$6880-02$aZhongguo wen hua xiao fei ti sheng yan jiu =$bPromoting cultural consumption in China /$cMao Zhonggen deng zhu.
+=880  10$6245-02$a中国文化消费提升研究 =$bPromoting cultural consumption in China /$c毛中根等著.
 =246  31$aPromoting cultural consumption in China
 =250  \\$6880-03$aDi yi ban.
 =880  \\$6250-03$a第一版.
@@ -732,6 +1042,479 @@
 =910  \\$aMARS
 =945  \\$aEMU$brc$220190213
 =994  \\$aC0$bEMU
-   </field>
+</field>
+</doc>
+<doc>
+<field name="id">9937110136902486</field>
+<field name="title">قضايا معاصرة في تربية طفل ما قبل المدرسة  </field>
+<field name="creator">حريري، رافدة،</field>
+<field name="author">حريري رافدة</field>
+<field name="pubDate">2013</field>
+<field name="genre">Electronic books.</field>
+<field name="topic">Child rearing. </field>
+<field name="language">Arabic</field>
+<field name="resourceType">Book</field>
+<field name="link">http://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-45263</field>
+<field name="loc_authority_name">n2016200048</field>
+<field name="record">=LDR  ^^^^^nam^a22004217i^4500
+=001  9937110136902486
+=005  20140407121917.7
+=006  m^^^^go^^d^^^^^^^^
+=007  cr^cn|||||||||
+=008  141202s2013^^^^jo^^^^^go^^^^^|||^|^ara^d
+=035  \\$aMLB0011070
+=035  \\$a(AE-DuAMF)MLB0011070
+=040  \\$aAE-DuAMF$beng$erda$cAE-DuAMF
+=049  \\$aEMUU
+=050  \4$aLB1590.3$b.E39 2013
+=066  \\$c(3
+=082  04$a372.21$222 Arabic
+=100  1\$6880-01$aḤarīrī, Rāfidah,$eauthor.
+=880  1\$6100-01/(3/r$aحريري، رافدة،$eauthor.
+=245  10$6880-02$aQaḍāyā mu‘āṣirah fī tarbiyat ṭifl mā qabla al-madrasah /$cRāfidah al-Ḥarīrī.
+=880  10$6245-02/(3/r$aقضايا معاصرة في تربية طفل ما قبل المدرسة /$cرافدة الحريري.
+=264  \1$6880-03$a‘Ammān :$bDār al-Manāhij lil-Nashr wa-al-Tawzī‘,$c2013.
+=880  \1$6264-03/(3/r$aعمان :$bدار المناهج للنشر والتوزيع،$c2013.
+=300  \\$a1 online resource (354 pages)
+=336  \\$atext$2rdacontent
+=337  \\$acomputer$2rdamedia
+=338  \\$aonline resource$2rdacarrier
+=590  \\$aAvailable to current Emory faculty, students and staff.
+=500  \\$aKeywords: PRESCHOOL EDUCATION; CURRICULUM; CREATION; MORAL VALUES; CREATIVE THINKING; EDUCATIONAL INSTITUTIONS; PARENT-CHILD RELATIONS; PSYCHOLOGICAL HEALTH; ARAB COUNTRIES
+=655  \0$aElectronic books.
+=650  \0$aChild rearing. 
+=710  2\$aAl Manhal FZLLC.
+=776  0\$6880-04$iPrint version.$tQaḍāyā mu‘āṣirah fī tarbiyat ṭifl mā qabla al-madrasah$h352 pages ; cm
+=880  0\$6776-04/(3/r$iPrint version.$tقضايا معاصرة في تربية طفل ما قبل المدرسة$h352 pages ; cm
+=856  40$zOnline resource from Al-Manhal$uhttp://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-45263
+=940  \\$aALMANHAL
+=945  \\$aEMU$bmk$220200511
+=949  \\$iAl Manhal
+</field>
+</doc>
+<doc>
+<field name="id">9937110150202486</field>
+<field name="title">أهل البيت عند أهل العرفان  </field>
+<field name="creator">الطيب، نوري،</field>
+<field name="author">الطيب نوري</field>
+<field name="pubDate">2011</field>
+<field name="genre">Electronic books.</field>
+<field name="topic">Sunnites.</field>
+<field name="topic">Islamic sects.</field>
+<field name="language">Arabic</field>
+<field name="resourceType">Book</field>
+<field name="link">http://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-881</field>
+<field name="record">=LDR  ^^^^^nam^a22004697i^4500
+=001  9937110150202486
+=005  20131223121917.7
+=006  m^^^^go^^d^^^^^^^^
+=007  cr^cn|||||||||
+=008  130325s2011^^^^le^^^^^go^^^^^^^^^^^ara^d
+=035  \\$aMLB0000713
+=035  \\$a(AE-DuAMF)MLB0000713
+=040  \\$aAE-DuAMF$beng$erda$cAE-DuAMF
+=049  \\$aEMUU
+=050  \4$aBP166$b.T39 2011
+=066  \\$c(3
+=082  04$a293.4$222 Arabic
+=100  1\$6880-01$aal-Ṭayyib, Nūrī,$eauthor.
+=880  1\$6100-01/(3/r$aالطيب، نوري،$eauthor.
+=245  10$6880-02$aAhl al-bayt ʻinda ahl al-ʻirfān /$cNūrī al-Ṭayyib.
+=880  10$6245-02/(3/r$aأهل البيت عند أهل العرفان /$cنوري الطيب .
+=250  \\$6880-03$aal-Ṭabʻah al-ūlá.
+=880  \\$6250-03/(3/r$aالطبعة الأولى.
+=264  \1$6880-04$aBayrūt :$bDār al-Kutub al-ʻIlmīyah,$c2011.
+=880  \1$6264-04/(3/r$aبيروت :$bدار الكتب العلمية،$c2011.
+=300  \\$a1 online resource (128 pages)
+=336  \\$2rdacontent$atext
+=337  \\$2rdamedia$acomputer
+=338  \\$2rdacarrier$aonline resource
+=590  \\$aAvailable to current Emory faculty, students and staff.
+=504  \\$aIncludes bibliographical references (page 125).
+=500  \\$aKeywords: AL AL-BAIT; ORTHODOX CALIPHATE 632-661
+=655  \0$aElectronic books.
+=650  \0$aIslamic sects.
+=650  \0$aSunnites.
+=710  2\$aAl Manhal FZLLC.
+=776  0\$6880-05$iPrint version.$tAhl al-bayt ʻinda ahl al-ʻirfān$h128 pages ; 24 cm
+=880  0\$6776-05/(3/r$iPrint version.$tأهل البيت عند أهل العرفان$h128 pages ; 24 cm
+=856  40$zOnline resource from Al-Manhal$uhttp://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-881
+=940  \\$aALMANHAL
+=945  \\$aEMU$bmk$220200511
+=949  \\$iAl Manhal
+</field>
+</doc>
+<doc>
+<field name="id">9937110255502486</field>
+<field name="title">الحجة على أهل المدينة. </field>
+<field name="creator">شيباني، أبو عبد الله محمد بن الحسن بن فرقد،</field>
+<field name="author">شيباني أبو عبد الله محمد بن الحسن بن فرقد</field>
+<field name="pubDate">2013</field>
+<field name="genre">Electronic books.</field>
+<field name="topic">Islamic law.</field>
+<field name="language">Arabic</field>
+<field name="resourceType">Book</field>
+<field name="link">http://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-14681</field>
+<field name="record">=LDR  ^^^^^nam^a2200457^i^4500
+=001  9937110255502486
+=005  20140407121917.3
+=006  m^^^^go^^d^^^^^^^^
+=007  cr^cn|||||||||
+=008  141202s2013^^^^su^^^^^go^^^^^|||^|^ara^d
+=035  \\$aMLB0004171
+=035  \\$a(AE-DuAMF)MLB0004171
+=040  \\$aAE-DuAMF$beng$erda$cAE-DuAMF
+=049  \\$aEMUU
+=050  \4$aBP131.5$b.F57 2013
+=066  \\$c(3
+=082  04$a267.1$222 Arabic
+=100  1\$6880-01$aShaybānī, AbūʻAbd Allāh Muḥammad ibn al-Ḥasan ibn Farqad,$dapproximately 752-805,$eauthor.
+=880  1\$6100-01/(3/r$aشيباني، أبو عبد الله محمد بن الحسن بن فرقد،$dapproximately 752-805،$eauthor.
+=245  13$6880-02$aal-Ḥujjah ʻalá ahl al-madīnah.$nal-juzʼ al-thālith /$cAbūʻAbd Allāh Muḥammad ibn al-Ḥasan ibn Farqad al-Shaybānī ; taḥqīq Markaz al-Turāth.
+=880  12$6245-02/(3/r$aالحجة على أهل المدينة.$nالجزء الثالث /$cأبو عبد الله محمد بن الحسن بن فرقد الشيباني ؛ تحقيق مركز التراث.
+=250  \\$6880-03$aal-Ṭabʻah al-iliktrūnīyah al-ūlá.
+=880  \\$6250-03/(3/r$aالطبعة الإلكترونية الأولى.
+=264  \1$6880-04$aal-Riyāḍ :$bMarkaz al-Turāth lil-Barmajīyāt,$c2013.
+=880  \1$6264-04/(3/r$aالرياض :$bمركز التراث للبرمجيات،$c2013.
+=300  \\$a1 online resource (435 pages)
+=336  \\$atext$2rdacontent
+=337  \\$acomputer$2rdamedia
+=338  \\$aonline resource$2rdacarrier
+=590  \\$aAvailable to current Emory faculty, students and staff.
+=500  \\$aKeywords: ISLAMIC JURISPRUDENCE; HANAFI JURISPRUDENCE; PROVISIONS OF SHARIA; GROUP HATRED; IMPRISONMENT; PRE-EMPTION; MARRIAGE
+=655  \0$aElectronic books.
+=650  \0$aIslamic law.
+=710  2\$6880-05$aMarkaz al-Turāth,$econtributor.
+=880  2\$6710-05/(3/r$aمركز التراث،$econtributor.
+=710  2\$aAl Manhal FZLLC.
+=880  0\$6775-06/(3/r$iElectronic version.$tحجة على أهل المدينة. الجزء الثالث$hal-juzʼ al-thālith, 435 pages
+=856  40$zOnline resource from Al-Manhal$uhttp://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-14681
+=940  \\$aALMANHAL
+=945  \\$aEMU$bmk$220200511
+=949  \\$iAl Manhal
+</field>
+</doc>
+<doc>
+<field name="id">9937110536502486</field>
+<field name="title">مشكلات الأطفال السلوكية في البيت والمدرسة  </field>
+<field name="creator">الحلو، حكمت،</field>
+<field name="author">الحلو حكمت</field>
+<field name="pubDate">2009</field>
+<field name="genre">Electronic books.</field>
+<field name="topic">Behavior disorders in children.</field>
+<field name="topic">Child psychology.</field>
+<field name="language">Arabic</field>
+<field name="resourceType">Book</field>
+<field name="link">http://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-2461</field>
+<field name="record">=LDR  ^^^^^nam^a22004577i^4500
+=001  9937110536502486
+=005  20131223121917.7
+=006  m^^^^go^^d^^^^^^^^
+=007  cr^cn|||||||||
+=008  130303s2009^^^^ua^^^^^go^^^^^^^^^^^ara^d
+=035  \\$aMLB0002005
+=035  \\$a(AE-DuAMF)MLB0002005
+=040  \\$aAE-DuAMF$beng$erda$cAE-DuAMF
+=049  \\$aEMUU
+=050  \4$aPJ7542.I8$bB37 2009
+=066  \\$c(3
+=082  04$a155.4$222 Arabic
+=100  1\$6880-01$aal-Ḥilū, Ḥikmat,$eauthor.
+=880  1\$6100-01/(3/r$aالحلو، حكمت،$eauthor.
+=245  10$6880-02$aMushkilāt al-aṭfāl al-sulūkīyah fī al-bayt wa-al-madrasah /$cḤikmat al-Ḥilū.
+=880  10$6245-02/(3/r$aمشكلات الأطفال السلوكية في البيت والمدرسة /$cحكمت الحلو.
+=250  \\$6880-03$aal-Ṭabʻah al-ūlá.
+=880  \\$6250-03/(3/r$aالطبعة الأولى.
+=264  \1$6880-04$aal-Qāhirah :$bDār al-Nashr lil-Jāmiʻāt,$c2009.
+=880  \1$6264-04/(3/r$aالقاهرة :$bدار النشر للجامعات،$c2009.
+=300  \\$a1 online resource (199 pages)
+=336  \\$2rdacontent$atext
+=337  \\$2rdamedia$acomputer
+=338  \\$2rdacarrier$aonline resource
+=590  \\$aAvailable to current Emory faculty, students and staff.
+=500  \\$aKeywords: CHILD PSYCHOLOGY; CHILD GROWTH; CHILD BEHAVIOUR; EARLY CHILDHOOD; WEANING
+=655  \0$aElectronic books.
+=650  \0$aBehavior disorders in children.
+=650  \0$aChild psychology.
+=710  2\$aAl Manhal FZLLC.
+=776  0\$6880-05$iPrint version.$tMushkilāt al-aṭfāl al-sulūkīyah fī al-bayt wa-al-madrasah$h199 pages ; 24 cm
+=880  0\$6776-05/(3/r$iPrint version.$tمشكلات الأطفال السلوكية في البيت والمدرسة$h199 pages ; 24 cm
+=856  40$zOnline resource from Al-Manhal$uhttp://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-2461
+=940  \\$aALMANHAL
+=945  \\$aEMU$bmk$220200511
+=949  \\$iAl Manhal
+</field>
+</doc>
+<doc>
+<field name="id">9937110749802486</field>
+<field name="title">الحجة على أهل المدينة. </field>
+<field name="creator">شيباني، أبو عبد الله محمد بن الحسن بن فرقد،</field>
+<field name="author">شيباني أبو عبد الله محمد بن الحسن بن فرقد</field>
+<field name="pubDate">2013</field>
+<field name="genre">Electronic books.</field>
+<field name="topic">Islamic law.</field>
+<field name="language">Arabic</field>
+<field name="resourceType">Book</field>
+<field name="link">http://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-14682</field>
+<field name="record">=LDR  ^^^^^nam^a2200457^i^4500
+=001  9937110749802486
+=005  20140407121917.3
+=006  m^^^^go^^d^^^^^^^^
+=007  cr^cn|||||||||
+=008  141202s2013^^^^su^^^^^go^^^^^|||^|^ara^d
+=035  \\$aMLB0004172
+=035  \\$a(AE-DuAMF)MLB0004172
+=040  \\$aAE-DuAMF$beng$erda$cAE-DuAMF
+=049  \\$aEMUU
+=050  \4$aDT77$b.Q28 2013
+=066  \\$c(3
+=082  04$a267.1$222 Arabic
+=100  1\$6880-01$aShaybānī, AbūʻAbd Allāh Muḥammad ibn al-Ḥasan ibn Farqad,$dapproximately 752-805,$eauthor.
+=880  1\$6100-01/(3/r$aشيباني، أبو عبد الله محمد بن الحسن بن فرقد،$dapproximately 752-805،$eauthor.
+=245  13$6880-02$aal-Ḥujjah ʻalá ahl al-madīnah.$nal-juzʼ al-rābiʻ /$cAbūʻAbd Allāh Muḥammad ibn al-Ḥasan ibn Farqad al-Shaybānī ; taḥqīq Markaz al-Turāth.
+=880  12$6245-02/(3/r$aالحجة على أهل المدينة.$nالجزء الرابع /$cأبو عبد الله محمد بن الحسن بن فرقد الشيباني ؛ تحقيق مركز التراث.
+=250  \\$6880-03$aal-Ṭabʻah al-iliktrūnīyah al-ūlá.
+=880  \\$6250-03/(3/r$aالطبعة الإلكترونية الأولى.
+=264  \1$6880-04$aal-Riyāḍ :$bMarkaz al-Turāth lil-Barmajīyāt,$c2013.
+=880  \1$6264-04/(3/r$aالرياض :$bمركز التراث للبرمجيات،$c2013.
+=300  \\$a1 online resource (343 pages)
+=336  \\$atext$2rdacontent
+=337  \\$acomputer$2rdamedia
+=338  \\$aonline resource$2rdacarrier
+=590  \\$aAvailable to current Emory faculty, students and staff.
+=500  \\$aKeywords: ISLAMIC JURISPRUDENCE; HANAFI JURISPRUDENCE; PROVISIONS OF SHARIA; MARRIAGE; DIVORCE; SHARE CROPPING; INHERITANCE; WERGILD; RETRIBUTION
+=655  \0$aElectronic books.
+=650  \0$aIslamic law.
+=710  2\$6880-05$aMarkaz al-Turāth,$econtributor.
+=880  2\$6710-05/(3/r$aمركز التراث،$econtributor.
+=710  2\$aAl Manhal FZLLC.
+=880  0\$6775-06/(3/r$iElectronic version.$tحجة على أهل المدينة. الجزء الرابع$hal-juzʼ al-rābiʻ, 343 pages
+=856  40$zOnline resource from Al-Manhal$uhttp://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-14682
+=940  \\$aALMANHAL
+=945  \\$aEMU$bmk$220200511
+=949  \\$iAl Manhal
+</field>
+</doc>
+<doc>
+<field name="id">9937110881902486</field>
+<field name="title">في عولمة العمارة وصورة المدينة  </field>
+<field name="creator">فياض، رهيف،</field>
+<field name="author">فياض رهيف</field>
+<field name="author">سلمان طلالeauthor of introduction etc</field>
+<field name="contributor">سلمان، طلال،eauthor of introduction, etc.</field>
+<field name="pubDate">2019</field>
+<field name="genre">Electronic books.</field>
+<field name="topic">Architecture</field>
+<field name="topic">Urban renewal</field>
+<field name="language">Arabic</field>
+<field name="resourceType">Book</field>
+<field name="link">http://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-104296</field>
+<field name="loc_authority_name">no00037356</field>
+<field name="record">=LDR  ^^^^^nam^a2200553^i^4500
+=001  9937110881902486
+=005  20191117121917.7
+=006  m^^^^go^^d^^^^^^^^
+=007  cr^cn|||||||||
+=008  191117s2019^^^^jo^eko^gob^^^^000^0^ara^d
+=020  \\$z9789953713113
+=020  \\$z9786144327074
+=035  \\$aMLB0016474
+=035  \\$a(AE-DuAMF)MLB0016474
+=040  \\$aAE-DuAMF$beng$erda$cAE-DuAMF
+=043  \\$ama-----
+=049  \\$aEMUU
+=050  14$aNA1465.3$b.F39 2019
+=066  \\$c(3
+=082  04$a720.956$222 Arabic
+=100  1\$6880-01$aFayyāḍ, Rahīf,$d1936-$eauthor.
+=880  1\$6100-01/(3/r$aفياض، رهيف،$d1936-$eauthor.
+=245  10$6880-02$aFī ʻawlamat al-ʻimārah wa-ṣūrat al-madīnah /$cRahīf Fayyāḍ ; taqdīm Ṭalāl Salmān.
+=880  10$6245-02/(3/r$aفي عولمة العمارة وصورة المدينة /$cرهيف فياض ؛ تقديم طلال سلمان.
+=250  \\$6880-03$aal-Ṭabʻah al-iliktirūnīyah al-ūlá.
+=880  \\$6250-03/(3/r$aالطبعة الإلكترونية الأولى.
+=264  \1$6880-04$aʻAmmān :$bal-Manhal lil-Nashr al-Iliktirūnī,$c2019.
+=880  \1$6264-04/(3/r$aعمان :$bالمنهل للنشر الإلكتروني،$c2019.
+=300  \\$a1 online resource (217 pages) :$bforms, photographs, plans.
+=336  \\$atext$2rdacontent
+=337  \\$acomputer$2rdamedia
+=338  \\$aonline resource$2rdacarrier
+=490  0\$6880-05$aKitāb al-safīr
+=880  0\$6490-05/(3/r$aكتاب السفير
+=590  \\$aAvailable to current Emory faculty, students and staff.
+=500  \\$aElectronic reproduction from the print version by Al Manhal.
+=504  \\$aIncludes bibliographical references.
+=500  \\$aKeywords: Architecture; Moorish architecture; Urban renewal; Arab civilization; Towns; Architects; Arab countries
+=655  \0$aElectronic books.
+=650  \0$aArchitecture$zArab countries.
+=650  \0$aUrban renewal$zArab countries.
+=700  1\$6880-06$aSalmān, Ṭalāl,$eauthor of introduction, etc.
+=880  1\$6700-06/(3/r$aسلمان، طلال،eauthor of introduction, etc.
+=776  0\$6880-07$iPrint version :$aFayyāḍ, Rahīf.$tFī ʻawlamat al-ʻimārah wa-ṣūrat al-madīnah$bal-Ṭabʻah al-ūlá.$dBayrūt, Lubnān : Dār al-Fārābī, 2017$h215 pages : forms, photographs, plans ; cm.$kKitāb al-safīr$z9789953713113$z9786144327074$w(DLC) 2016353659$w(OCoLC)984898390
+=880  0\$6776-07/(3/r$iPrint version :$aفياض، رهيف.$tفي عولمة العمارة وصورة المدينة$bالطبعة الأولى.$dبيروت، لبنان : دار الفارابي، 2017$h215 pages : forms, photographs, plans ; cm.$kكتاب السفير$z9789953713113$z9786144327074$w(DLC) 2016353659$w(OCoLC)984898390
+=856  40$zOnline resource from Al-Manhal$uhttp://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-104296
+=940  \\$aALMANHAL
+=945  \\$aEMU$bmk$220200511
+=949  \\$iAl Manhal
+</field>
+</doc>
+<doc>
+<field name="id">9937111080402486</field>
+<field name="title">تاريخ بيت المقدس  </field>
+<field name="creator">ابن الجوزي، أبو الفرج عبد الرحمن بن علي،</field>
+<field name="author">ابن الجوزي أبو الفرج عبد الرحمن بن علي</field>
+<field name="pubDate">2013</field>
+<field name="genre">Electronic books.</field>
+<field name="language">Arabic</field>
+<field name="resourceType">Book</field>
+<field name="link">http://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-32016</field>
+<field name="record">=LDR  ^^^^^nam^a2200481^i^4500
+=001  9937111080402486
+=005  20170619121917.3
+=006  m^^^^go^^d^^^^^^^^
+=007  cr^cn|||||||||
+=008  170615s2013^^^^jo^^^^^go^^^^^000^0^ara^d
+=035  \\$aMLB0009274
+=035  \\$a(AE-DuAMF)MLB0009274
+=040  \\$aAE-DuAMF$beng$erda$cAE-DuAMF
+=043  \\$aa-is---$aawba---
+=049  \\$aEMUU
+=050  14$aDS109.32.M38$bI26 2013
+=066  \\$c(3
+=082  04$a214.23$222 Arabic
+=100  1\$6880-01$aIbn al-Jawzī, Abū al-Faraj ʻAbd al-Raḥmān ibn ʻAlī,$dapproximately 1116-1201‏‏,$eauthor.
+=880  1\$6100-01/(3/r$aابن الجوزي، أبو الفرج عبد الرحمن بن علي،$dapproximately 1116-1201،$eauthor.
+=245  10$6880-02$aTārīkh Bayt al-Maqdis /$cal-Imām Ibn al-Jawzī.
+=880  10$6245-02/(3/r$aتاريخ بيت المقدس /$cالإمام ابن الجوزي.
+=250  \\$6880-03$aal-Ṭabʻah al-iliktirūnīyah al-ūlá.
+=880  \\$6250-03/(3/r$aالطبعة الإلكترونية الأولى.
+=264  \1$6880-04$aʻAmmān :$bal-Manhal lil-Nashr al-Iliktirūnī,$c2013.
+=880  \1$6264-04/(3/r$aعمان :$bالمنهل للنشر الإلكتروني،$c2013.
+=300  \\$a1 online resource (24 pages)
+=336  \\$atext$2rdacontent
+=337  \\$acomputer$2rdamedia
+=338  \\$aonline resource$2rdacarrier
+=590  \\$aAvailable to current Emory faculty, students and staff.
+=500  \\$aElectronic reproduction from the print version by Al Manhal.
+=500  \\$aKeywords: Islam; Aqsa Mosque; Sacred places; Muslim shrines; Historic sites and monuments; Historical events; Virtues; Hadith; Jerusalem
+=655  \0$aElectronic books.
+=610  20$6880-05$aMasjid al-Aqṣá (Jerusalem)$vEarly works to 1800.
+=880  24$6610-05/(3/r$aمسجد الأقصى (القدس)$vEarly works to 1800.
+=651  \0$aJerusalem$xHistory$vEarly works to 1800.
+=776  0\$6880-06$iPrint version :$aIbn al-Jawzī, Abū al-Faraj ʻAbd al-Raḥmān ibn ʻAlī.$tTārīkh Bayt al-Maqdis.$dal-Qāhirah, Jumhūrīyat Miṣr al-ʻArabīyah : Dār al-Fanār, [2011]$h23 pages ; 17 × 24 cm
+=880  0\$6776-06/(3/r$iPrint version :$aابن الجوزي، أبو الفرج عبد الرحمن بن علي.$tتاريخ بيت المقدس.$dالقاهرة، جمهورية مصر العربية : دار الفنار، [2011]$h23 pages ; 17 × 24 cm
+=856  40$zOnline resource from Al-Manhal$uhttp://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-32016
+=940  \\$aALMANHAL
+=945  \\$aEMU$bmk$220200511
+=949  \\$iAl Manhal
+</field>
+</doc>
+<doc>
+<field name="id">9937111499102486</field>
+<field name="title">فضائل بيت المقدس. </field>
+<field name="creator">المقدسي، ضياء الدين أبو عبد الله محمد بن عبد الواحد بن أحمد الدمشقي،</field>
+<field name="author">المقدسي ضياء الدين أبو عبد الله محمد بن عبد الواحد بن أحمد الدمشقي</field>
+<field name="pubDate">2013</field>
+<field name="genre">Electronic books.</field>
+<field name="topic">Hadith.</field>
+<field name="topic">Islamic shrines</field>
+<field name="language">Arabic</field>
+<field name="resourceType">Book</field>
+<field name="link">http://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-13857</field>
+<field name="record">=LDR  ^^^^^nam^a22005057i^4500
+=001  9937111499102486
+=005  20131223121917.7
+=006  m^^^^go^^d^^^^^^^^
+=007  cr^cn|||||||||
+=008  130303s2013^^^^su^^^^^go^^^^^^^^^^^ara^d
+=035  \\$aMLB0003814
+=035  \\$a(AE-DuAMF)MLB0003814
+=040  \\$aAE-DuAMF$beng$erda$cAE-DuAMF
+=043  \\$aa-is---
+=049  \\$aEMUU
+=050  \4$aBP76.8$b.B57 2013
+=066  \\$c(3
+=082  04$a237.11423$222 Arabic
+=100  1\$6880-01$aal-Maqdisī, Ḍiyāʼ al-Dīn Abū ʻAbd Allāh Muḥammad ibn ʻAbd al-Wāḥid ibn Aḥmad al-Dimashqī,$dapproximately 1173-1245,$eauthor.
+=880  1\$6100-01/(3/r$aالمقدسي، ضياء الدين أبو عبد الله محمد بن عبد الواحد بن أحمد الدمشقي،$dapproximately 1173-1245،$eauthor.
+=245  10$6880-02$aFaḍāʼil bayt al-maqdis.$nal-juzʼ al-awwal /$cḌiyāʼ al-Dīn Abū ʻAbd Allāh Muḥammad ibn ʻAbd al-Wāḥid ibn Aḥmad al-Dimashqī al-Maqdisī ; Markaz al-Turāth.
+=880  10$6245-02/(3/r$aفضائل بيت المقدس.$nالجزء الاول /$cضياء الدين أبو عبد الله محمد بن عبد الواحد بن أحمد الدمشقي المقدسي ؛ مركز التراث.
+=250  \\$6880-03$aal-Ṭabʻah al-ūlá.
+=880  \\$6250-03/(3/r$aالطبعة الأولى.
+=264  \1$6880-04$aal-Riyāḍ :$bMarkaz al-Turāth lil-Barmajīyāt,$c2013.
+=880  \1$6264-04/(3/r$aالرياض :$bمركز التراث للبرمجيات،$c2013.
+=300  \\$a1 online resource (62 pages)
+=336  \\$2rdacontent$atext
+=337  \\$2rdamedia$acomputer
+=338  \\$2rdacarrier$aonline resource
+=590  \\$aAvailable to current Emory faculty, students and staff.
+=504  \\$aIncludes bibliographical references and index.
+=500  \\$aKeywords: HADITH; SHAM COUNTRIES; JERUSALEM; HADITH NARRATION; AQSA MOSQUE; HADITH COMPILATIONS
+=655  \0$aElectronic books.
+=650  \0$aHadith.
+=650  \0$aIslamic shrines$zJerusalem.
+=710  2\$6880-05$aMarkaz al-Turāth,$econtributor.
+=880  2\$6710-05/(3/r$aمركز التراث،$econtributor.
+=710  2\$aAl Manhal FZLLC.
+=776  0\$6880-06$iPrint version.$tFaḍāʼil bayt al-maqdis. al-juzʼ al-awwal$hal-juzʼ al-awwal ; cm
+=880  0\$6776-06/(3/r$iPrint version.$tفضائل بيت المقدس. الجزء الاول$hal-juzʼ al-awwal ; cm
+=856  40$zOnline resource from Al-Manhal$uhttp://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-13857
+=940  \\$aALMANHAL
+=945  \\$aEMU$bmk$220200511
+=949  \\$iAl Manhal
+</field>
+</doc>
+<doc>
+<field name="id">9937111546002486</field>
+<field name="title">ملكية أثاث بيت الزوجية  </field>
+<field name="creator">الحيالي، قيس عبد الوهاب،</field>
+<field name="author">الحيالي قيس عبد الوهاب</field>
+<field name="pubDate">2007</field>
+<field name="genre">Electronic books.</field>
+<field name="topic">Marriage (Islamic law)</field>
+<field name="topic">Right of property (Islamic law)</field>
+<field name="topic">Islamic Law.</field>
+<field name="language">Arabic</field>
+<field name="resourceType">Book</field>
+<field name="link">http://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-2205</field>
+<field name="record">=LDR  ^^^^^nam^a22004817i^4500
+=001  9937111546002486
+=005  20131223121917.7
+=006  m^^^^go^^d^^^^^^^^
+=007  cr^cn|||||||||
+=008  130303s2007^^^^jo^^^^^go^^^^^^^^^^^ara^d
+=035  \\$aMLB0001696
+=035  \\$a(AE-DuAMF)MLB0001696
+=040  \\$aAE-DuAMF$beng$erda$cAE-DuAMF
+=049  \\$aEMUU
+=050  \4$aKZ3410$b.D39 2007
+=066  \\$c(3
+=082  04$a346.04$222 Arabic
+=100  1\$6880-01$aal-Ḥayyālī, Qays ʻAbd al-Wahhāb,$eauthor.
+=880  1\$6100-01/(3/r$aالحيالي، قيس عبد الوهاب،$eauthor.
+=245  10$6880-02$aMulkīyat athāth bayt al-zawjīyah /$cQays ʻAbd al-Wahhāb al-Ḥayyālī.
+=880  10$6245-02/(3/r$aملكية أثاث بيت الزوجية /$cقيس عبد الوهاب الحيالي.
+=250  \\$6880-03$aal-Ṭabʻah al-ūlá.
+=880  \\$6250-03/(3/r$aالطبعة الأولى.
+=264  \1$6880-04$aʻAmmān :$bDār al-Ḥāmid lil-Nashr wa-al-tawzīʻ,$c2007.
+=880  \1$6264-04/(3/r$aعمان :$bدار الحامد للنشر والتوزيع،$c2007.
+=300  \\$a1 online resource (152 pages)
+=336  \\$2rdacontent$atext
+=337  \\$2rdamedia$acomputer
+=338  \\$2rdacarrier$aonline resource
+=590  \\$aAvailable to current Emory faculty, students and staff.
+=504  \\$aIncludes bibliographical references (pages 143-153).
+=500  \\$aKeywords: IRAQ; MARRIAGE; ISLAMIC JURISPRUDENCE; PROPERTY RIGHTS; FURNITURE; Personal Statutes
+=655  \0$aElectronic books.
+=650  \0$aIslamic Law.
+=650  \0$aMarriage (Islamic law)
+=650  \0$aRight of property (Islamic law)
+=710  2\$aAl Manhal FZLLC.
+=776  0\$6880-05$iPrint version.$tMulkīyat athāth bayt al-zawjīyah$h152 pages ; 24 cm
+=880  0\$6776-05/(3/r$iPrint version.$tملكية أثاث بيت الزوجية$h152 pages ; 24 cm
+=856  40$zOnline resource from Al-Manhal$uhttp://proxy.library.emory.edu/login?url=http://platform.almanhal.com/MNHL/Preview/?ID=1-2205
+=940  \\$aALMANHAL
+=945  \\$aEMU$bmk$220200511
+=949  \\$iAl Manhal
+</field>
 </doc>
 </add>
