@@ -61,7 +61,7 @@ class fullRecord:
            user_query="\""+creator+"\""
            quote_user_query=urllib.parse.quote(user_query)
            search_url=webserver_host+cgi_path+search_script+"?query="+quote_user_query+"&search_field=creator"
-           main_author="<tr><th>Main Author:</th><td><span><a href=\""+search_url+"\">"+creator+"</a></span></td></tr>" 
+           main_author="<tr><th>Main Author:</th><td><span><a style=\"font-size: large\" href=\""+search_url+"\">"+creator+"</a></span></td></tr>" 
            page_string=page_string.replace("<!--MAIN_AUTHOR=-->",main_author)
      if len(contributor) > 0:
            contrib_list="<tr><th>Contributors:</th><td>"
@@ -69,7 +69,7 @@ class fullRecord:
                    quote_user_query="\""+this_contrib+"\""
                    quote_user_query=urllib.parse.quote(quote_user_query)
                    search_url=webserver_host+cgi_path+search_script+"?query="+quote_user_query+"&search_field=contributor"
-                   item="<div><a href=\""+search_url+"\">"+this_contrib+"</a></div>"
+                   item="<div><a style=\"font-size:large\" href=\""+search_url+"\">"+this_contrib+"</a></div>"
                    contrib_list+=item 
            contrib_list=contrib_list+"</td></tr>"
            page_string=page_string.replace("<!--OTHER_AUTHORS=-->",contrib_list)
@@ -80,26 +80,26 @@ class fullRecord:
                    query="\""+g_item+"\""
                    quote_query=urllib.parse.quote(query)
                    search_url=webserver_host+cgi_path+search_script+"?query="+quote_query+"&search_field=genre"
-                   item="<div><a href=\""+search_url+"\">"+g_item+"</a></div>"
+                   item="<div><a style=\"font-size:large\" href=\""+search_url+"\">"+g_item+"</a></div>"
                    subject_list+=item 
                 for t_item in topic:
                    query="\""+t_item+"\""
                    quote_query=urllib.parse.quote(query)
                    search_url=webserver_host+cgi_path+search_script+"?query="+quote_query+"&search_field=topic"
-                   item="<div><a href=\""+search_url+"\">"+t_item+"</a></div>"
+                   item="<div><a style=\"font-size:large\" href=\""+search_url+"\">"+t_item+"</a></div>"
                    subject_list+=item 
                 subject_list=subject_list+"</td></tr>"
                 page_string=page_string.replace("<!--SUBJECTS=-->",subject_list)
      if online_access != "":
                 online="<tr><th>Online access:</th><td>"
-                item="<div><a href=\""+online_access+"\">Available</a></div>"
+                item="<div><a style=\"font-size:large\" href=\""+online_access+"\">Available</a></div>"
                 online=online+item
                 page_string=page_string.replace("<!--ONLINE_ACCESS=-->",online)
      if oclc_link != "":
                 worldcat="<div><h2>"+"<a href=\""+oclc_link+"\" target=\"_blank\">"+"This item in Worldcat</a></h2></div>"
                 page_string=page_string.replace("<!--WORLDCAT=-->",worldcat)
-                staff_view=record_text
-                page_string=page_string.replace("<!--STAFF_VIEW=-->",staff_view)
+     staff_view=record_text
+     page_string=page_string.replace("<!--STAFF_VIEW=-->",staff_view)
      try:
            authority_id=jsonResponse["response"]["docs"][0]["loc_authority_name"][0]
      except:
@@ -114,6 +114,6 @@ class fullRecord:
 
 
 if __name__=="__main__":
-    page=fullRecord("/Users/bernardo/Webserver/Documents/euclid/full_record.html")
+    page=fullRecord("/home/bernardo/Webserver/Documents/euclid/full_record.html")
     print(page)
     
