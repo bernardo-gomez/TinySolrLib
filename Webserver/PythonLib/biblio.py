@@ -98,16 +98,12 @@ class Record:
       digits=re.compile("(\d+)(.*)")
       for field in self.marc:
           if field[0:4] == "=001":
-               text=field[8:]
-               subfield=text.split("$")
-               for subf in subfield:
-                  if subf != "":
-                    if subf[0:1] == "a":
-                       m=digits.match(subf[1:])
-                       if m:
-                          isbn=str(m.group(1))
-                          return isbn
-      return isbn
+               text=field[6:]
+               m=digits.match(text)
+               if m:
+                  recid=str(m.group(1))
+                  return recid
+      return recid
 
    def get_oclc_string(self):
       """
@@ -154,8 +150,12 @@ class Record:
 
    def get_title(self):
       title=""
+      title_880=""
       subfa=""
       subfb=""
+      subfa_880=""
+      subfb_880=""
+      title_is_880=False
       for field in self.marc:
           if field[0:4] == "=245":
                text=field[8:]
@@ -166,8 +166,25 @@ class Record:
                        subfa=str(subf[1:])
                     elif subf[0:1] == "b":
                        subfb=str(subf[1:])
-      title=subfa+" "+subfb
-      title=title.replace("/","")
+               title=subfa+" "+subfb
+               title=title.replace("/","")
+          if field[0:4] == "=880" and not title_is_880:
+               text=field[8:]
+               subfield=text.split("$")
+               for subf in subfield:
+                  if subf != "":
+                    if subf[0:1] == "6":
+                        if subf[1:4] == "245":
+                            title_is_880=True
+                    elif subf[0:1] == "a":
+                        subfa_880=str(subf[1:])
+                    elif subf[0:1] == "b":
+                        subfb_880=str(subf[1:])
+               if title_is_880:
+                   title_880=subfa_880+" "+subfb_880
+                   title_880=title_880.replace("/","")
+      if title_880 != "":
+           title=title_880
       return title
 
    def get_language(self):
@@ -188,27 +205,64 @@ class Record:
          MARC 100 and MARC 700. It disregards punctuation ( dot, comma)
       """
       name_list=[]
+      name_880_list=[]
+      name_is_880=False
       for field in self.marc:
           if field[0:4] == "=100":
+               ignore_it=False
                text=field[8:]
                subfield=text.split("$")
                for subf in subfield:
                   if subf != "":
+                    if subf[0:1] == "6":
+                        ignore_it=True
                     if subf[0:1] == "a":
                       name=subf[1:]
                       name=name.replace(",","")
                       name=name.replace(".","")
-                      name_list.append(name)
+                      name=name.replace("/","")
+               if not ignore_it:
+                 name_list.append(name)
           elif field[0:4] == "=700":
+               ignore_it=False
                text=field[8:]
                subfield=text.split("$")
                for subf in subfield:
                   if subf != "":
+                    if subf[0:1] == "6":
+                        ignore_it=True
                     if subf[0:1] == "a":
                       name=subf[1:]
                       name=name.replace(",","")
                       name=name.replace(".","")
-                      name_list.append(name)
+                      name=name.replace("/","")
+               if not ignore_it:
+                  name_list.append(name)
+          elif field[0:4] == "=880":
+               name_is_880=False
+               text=field[8:]
+               subfield=text.split("$")
+               name_880=""
+               for subf in subfield:
+                  if subf != "":
+                    if subf[0:1] == "6":
+                        if subf[1:4] == "700":
+                            name_is_880=True
+                        if subf[1:4] == "100":
+                            name_is_880=True
+                    elif subf[0:1] == "a":
+                           name_880=subf[1:]
+                           name_880=name_880.replace('\u060c',"")
+                           name_880=name_880.replace(".","")
+                           name_880=name_880.replace("/","")
+                           name_880=name_880.replace(",","")
+               if name_is_880:
+                  name_880_list.append(name_880)
+        # '\u060c' arabic comma
+#                      if subf[len(subf)-1] == '\u060c':
+#  arabic semicolon ؛ U+061B
+#  .  U+002E
+      name_list=name_list+name_880_list
       return name_list
 
    def get_creator(self):
@@ -217,6 +271,8 @@ class Record:
          MARC 100 (subfield "a" only). It normalizes personal name: "namex, namey."
       """
       name=""
+      name_880=""
+      name_is_880=False
       for field in self.marc:
           if field[0:4] == "=100":
                text=field[8:]
@@ -229,7 +285,21 @@ class Record:
                       else:
                          name=subf[1:]
                       name=name.replace("..",".")
-                      return name
+          if field[0:4] == "=880" and not name_is_880:
+               text=field[8:]
+               subfield=text.split("$")
+               for subf in subfield:
+                  if subf != "":
+                    if subf[0:1] == "6":
+                        if subf[1:4] == "100":
+                            name_is_880=True
+                    elif subf[0:1] == "a":
+                        subfa_880=str(subf[1:])
+                        name_880=subfa_880
+               if name_is_880:
+                   name_880=name_880.replace("..",".")
+      if name_880 != "":
+           name=name_880
       return name
 
    def get_contributor(self):
@@ -238,19 +308,47 @@ class Record:
          MARC 700 (subfield "a" only) . It normalizes personal name: "namex, namey."
       """
       name_list=[]
+      name_list_880=[]
+      name_is_880=False
+      name_880=""
       for field in self.marc:
           if field[0:4] == "=700":
+               ignore_it=False
                text=field[8:]
                subfield=text.split("$")
                for subf in subfield:
                   if subf != "":
+                    if subf[0:1] == "6":
+                        ignore_it=True
                     if subf[0:1] == "a":
                       if subf[len(subf)-1] == ',':
                          name=subf[1:len(subf)-1]+"."
                       else:
                          name=subf[1:]
-                      name=name.replace("..",".")
-                      name_list.append(name)
+               if not ignore_it:
+                 name=name.replace("..",".")
+                 name_list.append(name)
+          if field[0:4] == "=880":
+               name_is_880=False
+               text=field[8:]
+               subfield=text.split("$")
+               name_880=""
+               for subf in subfield:
+                  if subf != "":
+                    if subf[0:1] == "6":
+                        if subf[1:4] == "700":
+                            name_is_880=True
+                    elif subf[0:1] == "a":
+                           name_880=subf[1:]
+        # '\u060c' arabic comma
+#                      if subf[len(subf)-1] == '\u060c':
+#  arabic semicolon ؛ U+061B
+#  .  U+002E
+               if name_880 != "" and name_is_880:
+                   name_list_880.append(name_880)
+
+      if len(name_list_880)  > 0:
+           name_list=name_list_880+name_list
       return name_list
 
    def get_publication_info(self):
@@ -361,6 +459,7 @@ class Record:
                          subfc=subf[1:]
                          subfc=subfc.replace("[","")
                          subfc=subfc.replace("]","")
+                         subfc=subfc.replace(".","")
                publication_date=subfc
                return publication_date
 
@@ -374,6 +473,7 @@ class Record:
                          subf=subf[1:]
                          subfc=subfc.replace("[","")
                          subfc=subfc.replace("]","")
+                         subfc=subfc.replace(".","")
                publication_date=subfc
                return publication_date
       return publication_date
@@ -426,7 +526,7 @@ class Record:
       pages_string=""
 #300|  |$$a274 pages ;$$c24 cm.
       pages=re.compile("[^0-9]*([0-9]+) pages.*")
-      for rec in self.lines:
+      for rec in self.marc:
          if rec[0:3] == "300":
             text=rec[7:]
             subfield=text.split("$$")
@@ -456,7 +556,7 @@ class Record:
       contributor_list=[]
       producer_list=[]
 
-      for rec in self.lines:
+      for rec in self.marc:
          if rec[0:3] == "700":
            deathdate=""
            birthdate=""
@@ -598,7 +698,7 @@ class Record:
       """
         it sends string to the HTTP client.
       """
-      for line in self.lines:
+      for line in self.marc:
          sys.stderr.write(line+"\n")
 
       return 0
@@ -609,7 +709,7 @@ class Record:
          MARC 520.
       """
       description_string=""
-      for rec in self.lines:
+      for rec in self.marc:
          if rec[0:3] == "520":
            text=rec[7:]
            subfield=text.split("$$")
@@ -632,6 +732,7 @@ class Record:
       url=""
       for field in self.marc:
           if field[0:4] == "=856":
+               emory_resource=False
                if str(field[6:8]) == "40":
                   text=field[8:]
                   subfield=text.split("$")
@@ -639,22 +740,9 @@ class Record:
                     if subf != "":
                        if subf[0:1] == "u":
                             url=subf[1:]
-                            return url
+                       if subf[0:1] == "z":
+                           if subf[1:16] == "Online resource":
+                               emory_resource=True
+                  if emory_resource:
+                     return url
       return url
-
-
-if __name__=="__main__":
-  record="""=LDR  ^^^^^cjm^a2200577Ia^4500\n=001  990007175530302486\n=005  20160418211004.0\n=007  sd^fungnn|||eu\n=008  021212p20021973xxujzn^^^i^^^^^^^^^^eng^d\n=024  1\\$a696998682429\n=028  02$a9699-86824-2$bColumbia/Legacy\n=028  00$a9362-45221-2$bWarner Bros.\n=028  00$a9 45221-2$bWarner Bros.\n=033  00$a19730708$b6044$cM6\n=033  20$a19840708$a19910708$b6044$cM6\n=033  00$a19910717$b5834$cN5\n=035  \\\\$a(Aleph)000717553EMU01\n=035  9\\$au2955438\n=035  \\\\$aocm51214070\n=035  \\\\$a(Sirsi) o51214070\n=035  \\\\$a(OCoLC)51214070\n=040  \\\\$aIXA$cIXA$dMDY$dOCLCQ$dUtOrBLW\n=082  04$a781.65\n=100  1\\$aDavis, Miles,$bperformer\n=245  14$aThe complete Miles Davis at Montreux$h[sound recording] /$cMiles.\n=246  30$aMiles Davis at Montreux\n=264  \\4$c℗2002\n=264  \\1$a[U.S.?] :$bColumbia/Legacy :$bMontreux Sounds,$c[2002]\n=300  \\\\$a20 sound discs :$bdigital ;$c4 3/4 in.\n=336  \\\\$aperformed music$bprm$2rdacontent\n=337  \\\\$aaudio$bs$2rdamedia\n=338  \\\\$aaudio disc$bsd$2rdacarrier\n=500  \\\\$a\"Contain[s] every single note that ... Miles Davis played at the Montreux Jazz Festival on Lake Geneva in Switzerland\"--P. 6 of book.\n=511  0\\$aMiles Davis, trumpet ; with, variously: Dave Liebman, reeds ; Kenny Garrett, Rick Margitza, David Sanborn, saxophone ; Bob Berg, saxophone, keyboards ; Reggie Lucas, Pete Cosey, John Scofield, Robben Ford, guitar ; Robert Irving III, Adam Holzman, Kei Akagi, Deron Johnson, George Duke, keyboards ; Michael Henderson, Darryl Jones, Felton Crews, Benny Rietveld, bass ; Richard Patterson, Foley, bass, vocal ; Al Foster, Vincent Wilburn Jr., Ricky Wellman, drums ; J. Mtume, percussion, synthesizer ; Steve Thornton, Marilyn Mazur, Munyungo Jackson, Erin Davis, percussion ; Wallace Roney, trumpet, flugelhorn ; Chaka Khan, vocal ; The Gil Evans Orchestra ; The George Gruntz Concert Jazz Band ; Quincy Jones, conductor.\n=518  \\\\$aRecorded live at the Montreux Jazz Festival, Montreux, Switzerland, July 8, 1973 and July 8, 1984-July 8, 1991; disc 20 recorded live in Nice, France, July 17, 1991.\n=500  \\\\$aMost selections previously unreleased; disc 19 previously released as Live at Montreux in 1993 (Warner Bros. 9362-45221-2 [i.e. 9 45221-2]).\n=500  \\\\$aCompact discs.\n=500  \\\\$aProgram notes by Nick Liebmann, Claude Nobs, and Adam Holzman (49 p. : ill., some col. ; 27 x 16 cm.) inserted in container.\n=505  0\\$aVariously (some titles repeated): Miles in Montreux '73 -- Ife -- Calypso frelimo -- Speak/That's what happened -- Star people -- What it is -- It gets better -- Something's on your mind -- Time after time -- Hopscotch/Star on Cicely -- Bass solo -- Jean-Pierre -- Lake Geneva -- Code M.D. -- Theme from Jack Johnson/One phone call/Street scenes/That's what happened -- Maze -- Human nature -- MD 1/Something's on your mind/MD 2 -- Ms. Morrisine -- Pacific Express -- Katia -- You're under arrest -- Jean-Pierre/You're under arrest/Then there were none -- Decoy -- New blues -- Wrinkle -- Tutu -- Splatch -- Al Jarreau -- Carnival time -- Burn -- Portia -- In a silent way -- Intruder -- Perfect way -- The senate/Me & U -- Movie star -- Heavy metal prelude -- Heavy metal -- Don't stop me now -- Tomaas -- Hannibal -- Mr. Pastorius -- Jilli -- Jo Jo -- Amandla -- Introduction by Claude Nobs & Quincy Jones -- Boplicity -- Introduction to \"Miles ahead\" medley -- Springsville -- Maids of Cadiz -- The Duke -- My ship -- Miles ahead -- Blues for Pablo -- Introduction to \"Porgy and Bess\" medley -- Orgone -- Gone, gone, gone -- Summertime -- Here come de honey man -- Introduction to \"Sketches of Spain\" -- The pan piper -- Solea.\n=650  \\0$aJazz.\n=650  \\0$aJazz vocals.\n=650  \\0$aJazz musicians.\n=650  \\0$aJazz musicians$zUnited States.\n=650  \\0$aLive sound recordings.\n=700  2\\$aCorea, Chick.$bpianist\n=700  2\\$aPuente,Tito.,$bmusician\n=710  2\\$aMontreux Sounds.\n=740  02$aLive at Montreux.\n=910  \\\\$aRDA ENRICHED\n=910  \\\\$aMARS\n=945  \\\\$aemu pmb\n=945  \\\\$a9DT$220080225\n=994  \\\\$aZ0$bEMU"a"""
-  marc=Record(record)
-  print(marc)
-  print(marc.get_title())
-  print(marc.get_creator())
-  print(marc.get_contributor())
-  print(marc.get_genre())
-  print(marc.get_topic())
-  print(marc.get_publication_info())
-  print(marc.get_publication_date())
-  print("publisher:",marc.get_publisher())
-  print(marc.get_language())
-  print(marc.get_resource_type())
-  print(marc.get_oclc_string())
