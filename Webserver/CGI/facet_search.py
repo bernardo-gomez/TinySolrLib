@@ -270,9 +270,15 @@ def process_form(user_query,solr_host,solr_path,display_results,display_full_rec
 
   next_page=str(next_page)
   page_size=str(page_size)
+  fquery=re.compile("(.*?):(.*)")
+  m=fquery.match(filter_query)
+  filter_q=filter_query
+  if m:
+      filter_q=m.group(1)+":"+'"'+m.group(2)+'"'
  ### API call
+  quote_filter_query=urllib.parse.quote(filter_q)
   try:
-      search=solr_host+solr_path+'select?q='+user_query+'&facet=on&facet.field=pubDate&facet.field=language&facet.field=creator&facet.field=contributor&facet.field=genre&facet.field=topic&facet.field=resourceType&fq='+filter_query+'&facet.mincount=1&rows='+page_size+'&start='+next_page
+      search=solr_host+solr_path+'select?q='+user_query+'&facet=on&facet.field=pubDate&facet.field=language&facet.field=creator&facet.field=contributor&facet.field=genre&facet.field=topic&facet.field=resourceType&fq='+quote_filter_query+'&facet.mincount=1&rows='+page_size+'&start='+next_page
       try:
          response = requests.get(search,auth=HTTPBasicAuth(authorized_user,authorized_passwd),timeout=10)
       except:
@@ -308,7 +314,7 @@ def process_form(user_query,solr_host,solr_path,display_results,display_full_rec
       number_found=jsonResponse["response"]["numFound"]
       start_record=jsonResponse["response"]["start"]
       record_count=len(jsonResponse["response"]["docs"])
-      if record_count == 1:
+      if record_count == 1 and number_found == 1:
  ### result has one record, then show full record.
 
             record_text=jsonResponse["response"]["docs"][0]["record"][0]
@@ -445,11 +451,11 @@ def process_form(user_query,solr_host,solr_path,display_results,display_full_rec
       if int(start_record) + int(page_size) < int(number_found):
         next_page=str(int(start_record)+int(page_size))
         quote_user_query=urllib.parse.quote(user_query)
-        nextpage_link=webserver_host+cgi_path+'search?query='+quote_user_query+'&next='+next_page
+        nextpage_link=webserver_host+cgi_path+facet_script+'?q='+quote_user_query+'&next='+next_page+"&fq="+filter_query
         nextpage_element='<a href="'+nextpage_link+'" title="Next page"><b>NEXT</b></a>'
       if int(start_record) - int(page_size) >= 0:
         next_page=str(int(start_record)-int(page_size))
-        previouspage_link=webserver_host+cgi_path+'search?query='+quote_user_query+'&next='+next_page
+        previouspage_link=webserver_host+cgi_path+facet_script+'?q='+quote_user_query+'&next='+next_page+"&fq="+filter_query
         previouspage_element='<a href="'+previouspage_link+'" title="Previous page"><b>PREVIOUS</b></a>'
 
       result_page=re.sub(previous_marker,previouspage_element,result_page)
