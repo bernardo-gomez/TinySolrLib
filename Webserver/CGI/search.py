@@ -343,7 +343,7 @@ def process_form(user_query,solr_host,solr_path,form_file,display_results,displa
        #print(len(jsonResponse["response"]["docs"]))
       record_count=len(jsonResponse["response"]["docs"])
       #print ("Number of records",str(record_count),file=sys.stderr)
-      if record_count == 1:
+      if record_count == 1 and number_found == 1:
 ### Only one record found: display full record.
             full_record=displaypage.fullRecord(display_full_record)
             page_string=full_record.full_page(jsonResponse,user_query,webserver_host,cgi_path,search_script)
@@ -541,11 +541,17 @@ def process_form(user_query,solr_host,solr_path,form_file,display_results,displa
       if int(start_record) + int(page_size) < int(number_found):
         next_page=str(int(start_record)+int(page_size))
         quote_user_query=urllib.parse.quote(user_query)
-        nextpage_link=webserver_host+cgi_path+'search?query='+quote_user_query+'&next='+next_page
+        if search_field != "":
+            nextpage_link=webserver_host+cgi_path+'search?query='+quote_user_query+"&search_field="+search_field+'&next='+next_page
+        else:
+            nextpage_link=webserver_host+cgi_path+'search?query='+quote_user_query+'&next='+next_page
         nextpage_element='<span>  <a href="'+nextpage_link+'" title="Next page"><b>NEXT</b></a>   </span>'
       if int(start_record) - int(page_size) >= 0:
         next_page=str(int(start_record)-int(page_size))
-        previouspage_link=webserver_host+cgi_path+'search?query='+quote_user_query+'&next='+next_page
+        if search_field != "":
+            previouspage_link=webserver_host+cgi_path+'search?query='+quote_user_query+"&search_field="+search_field+'&next='+next_page
+        else:
+            previouspage_link=webserver_host+cgi_path+'search?query='+quote_user_query+'&next='+next_page
         previouspage_element='<span> <a href="'+previouspage_link+'" title="Previous page"><b>PREVIOUS</b></a>  </span>'
 
       result_page=re.sub(previous_marker,previouspage_element,result_page)
@@ -565,4 +571,4 @@ def process_form(user_query,solr_host,solr_path,form_file,display_results,displa
   return
 
 if __name__ == "__main__":
-    main()
+    main() 
