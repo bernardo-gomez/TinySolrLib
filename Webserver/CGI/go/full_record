@@ -1,0 +1,10 @@
+#!/bin/bash
+
+ENVIRON_FILE="path-to/Webserver/CGI/environ"
+. $ENVIRON_FILE
+
+while IFS== read -r name value
+do 
+   export ${name}
+done < $ENVIRON_FILE
+path-to/Webserver/CGI/go/fullRecord path-to/Webserver/Config/full_recordGo.cfg
