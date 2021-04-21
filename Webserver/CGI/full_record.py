@@ -228,16 +228,12 @@ def process_req(solr_host,solr_path,display_full_record,webserver_host,cgi_path,
 
       number_found=jsonResponse["response"]["numFound"]
       start_record=jsonResponse["response"]["start"]
-       #print(len(jsonResponse["response"]["docs"]))
       record_count=len(jsonResponse["response"]["docs"])
       if record_count == 1:
 ### invoke displaypage class.
-            full_record=displaypage.fullRecord(display_full_record)
+            full_record=displaypage.new_page(display_full_record)
 ###
-##   displaying user query might create confusion here
-            user_query=""
-###
-            page_string=full_record.full_page(jsonResponse,user_query,webserver_host,cgi_path,search_script)
+            page_string=full_record.full_page(response,webserver_host,cgi_path,search_script)
             print_page(page_string)
             return
 
@@ -253,3 +249,4 @@ def process_req(solr_host,solr_path,display_full_record,webserver_host,cgi_path,
 
 if __name__ == "__main__":
     main()
+      
