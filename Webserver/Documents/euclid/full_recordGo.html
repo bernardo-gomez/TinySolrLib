@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Tiny Library</title>
+	<link rel="stylesheet" media="screen" href="http://webserverhost/euclid/styles.css">
+<style>
+input[type='checkbox'] {
+	display: none;
+}
+
+.wrap-collabsible {
+	margin: 1.2rem 0;
+}
+
+.lbl-toggle {
+	display: inline-block;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 1rem;
+	color: #37474f;
+	background: #f5f5f5;
+	cursor: pointer;
+	border-radius: 7px;
+	transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+	color: #bdbdbd;
+}
+
+.lbl-toggle::before {
+	content: ' ';
+	display: inline-block;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid currentColor;
+	vertical-align: middle;
+	margin-right: .7rem;
+	transform: translateY(-2px);
+	transition: transform .2s ease-out;
+}
+
+.toggle:checked+.lbl-toggle::before {
+	transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+	max-height: 0px;
+	overflow: scroll;
+	transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked+.lbl-toggle+.collapsible-content {
+	max-height: none;
+}
+
+.toggle:checked+.lbl-toggle {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+	background: white;
+	border-bottom: 1px solid rgba(0, 105, 255, .45);
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	padding: .5rem 1rem;
+}
+
+.collapsible-content p {
+	margin-bottom: 0;
+}
+.collapsible-content pre {
+	margin-bottom: 0;
+}
+
+
+</style>
+
+</head>
+<body>
+<h1>SOLR TINY LIBRARY</h1>
+<hr>
+<p>
+<!-- class="search_form" -->
+<form  class="search_form" action="/cgi-bingo/search" method="post" name="search_form">
+        <input type="text" id="query" name="query"  placeholder="books and media" size="50" maxlength="250"  required autofocus value="">
+        <button class="button" type="submit">Search</button>
+</form>
+<hr>
+<p>
+<div>
+<!--FULL_RECORD=-->
+<h2><!--TITLE=--></h2>
+<table>
+  <!--MAIN_AUTHOR=-->
+  <!--OTHER_AUTHORS=-->
+  <!--FORMAT=-->
+  <!--PUBLISHER=-->
+  <!--PUBLISH_DATE=-->
+  <!--SUBJECTS=-->
+  <!--ONLINE_ACCESS=-->
+</table>
+<p>
+</div>
+<div>
+<!--WORLDCAT=-->
+<!--OCLC_IDENTITY_NETWORK=-->
+
+  <div class="wrap-collabsible">
+  <input id="collapsible" class="toggle" type="checkbox">
+  <label for="collapsible" class="lbl-toggle">Staff view</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+      <pre>
+<!--STAFF_VIEW=-->
+      </pre>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</body>
+</html>
