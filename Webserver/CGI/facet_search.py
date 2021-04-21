@@ -182,6 +182,7 @@ def main():
   else:
      next_page=form["next"].value
 
+
   filter_query=""
   if "fq" in form:
       filter_query=form["fq"].value
@@ -318,155 +319,22 @@ def process_form(user_query,solr_host,solr_path,display_results,display_full_rec
  ### result has one record, then show full record.
 
             record_text=jsonResponse["response"]["docs"][0]["record"][0]
-            full_record=displaypage.fullRecord(display_full_record)
-            page_string=full_record.full_page(jsonResponse,user_query,webserver_host,cgi_path,search_script)
+            full_record=displaypage.new_page(display_full_record)
+            page_string=full_record.full_page(response,webserver_host,cgi_path,search_script)
             print_page(page_string)
             return
       if record_count == 0:
             print_error("No facet matches. System error(11)")
             print ("No facet matches. Database may be incomplete.",file=sys.stderr)
             return
-      refine_result_string=""
-       
-## facet example as returned by solr:
-# "facet_counts":{
-#   "facet_queries":{},
-#   "facet_fields":{
-#     "pubDate":[
-#       "1989",2,
-#       "2004",2,
-#       "1994",1,
-#     "language":[
-#       "english",5,
-#       "chinese",1]},
-#   "facet_ranges":{},
-#   "facet_intervals":{},
-#   "facet_heatmaps":{}}
- 
-      with open(refine_results) as f:
-            for line in f:
-                refine_result_string+=line
+      multiple_recs=displaypage.new_page(display_results)
+      page_string,outcome=multiple_recs.record_list(response,user_query,webserver_host,cgi_path,search_script,refine_results,facet_script,page_size,record_count_marker,facet_marker,previous_marker,next_marker,full_record_script,results_marker)
+      if outcome == 0:
+            print_page(page_string)
+      else:
+            print_error(page_string)
+      return
 
-      facet_info=jsonResponse["facet_counts"]
-      facet_fields=facet_info["facet_fields"]
-      #print(facet_fields,file=sys.stderr)
-      facet_list={}
-      for facet, value in facet_fields.items():
-            state="get_item"
-            item_list=[]
-            string=""
-            for item in value:
-               if state == "get_item":
-                  string=str(item)
-                  state="get_count"
-               else:
-                  string=string+"_|_"+str(item)
-                  item_list.append(string)
-                  string=""
-                  state="get_item"
-            facet_list.update({facet:item_list})
-      req_list=""
-      for key,value in facet_list.items():
-            html_marker="<!--"+str(key)+"=-->"
-            for v in value:
-               instance=v.split("_|_")
-               #print(instance,file=sys.stderr)
-               if len(instance) == 2:
-                  instance_value=instance[0]
-                  instance_count=instance[1]
-                  #user_query=re.sub(r' ','%20',user_query)
-                  quote_user_query=urllib.parse.quote(user_query)
-                  quote_instance_value=urllib.parse.quote(instance_value)
-                  #facet_query='facet=on&q='+quote_user_query+'&facet.field='+key+'&facet_mincount=1&fq='+key+':'+str(quote_instance_value)
-                  facet_query='&q='+quote_user_query+'&facet.field='+key+'&fq='+key+':'+str(quote_instance_value)
-                  facet_request=webserver_host+cgi_path+facet_script+'?'+facet_query
-                  req='<li><span><a href="'+facet_request+'">'+instance_value+'</a>'+'</span>'+'<span>'+"  "+str(instance_count)+'</span>'+'</li>'
-                  req_list+=req
-                  #print(req,file=sys.stderr)
-            #print(req_list,file=sys.stderr)
-            refine_result_string=re.sub(html_marker,req_list,refine_result_string)
-            #print(refine_result_string,file=sys.stderr)
-            req_list=""
-      ### 
-      result_page=""
-      result_count="Result count: "+str(number_found)
-      result_count="<h3>"+result_count+"</h3>"
-      ## build results list as a string result_page=""
-      with open(display_results) as f:
-            for line in f:
-                result_page+=line
-      result_page=re.sub(record_count_marker,result_count,result_page)
-      result_page=re.sub(facet_marker,refine_result_string,result_page)
-#####
-####
-      record_table=""
-      record_table='<div class="RecResults">'
-      record_table+='<table class="RecordTable">'
-      record_table+='<tbody>'
-      for rec in jsonResponse["response"]["docs"]:
-            #print("record_id:", rec["id"],file=sys.stderr)
-            record_id=rec["id"]
-            record_text=rec["record"][0]
-            marc=biblio.Record(record_text)
-            rec_title=marc.get_title()
-            author_str=marc.get_creator()
-            if author_str != "":
-               author_str="by "+author_str
-            publication_info=marc.get_publication_info()
-            title_url=webserver_host+cgi_path+full_record_script+"?id="+str(record_id)
-            record_title=rec_title
-## .ResultList {}
-## .SummaryFields {float: left; width: 75}
-            record_table+='<tr>'
-            record_table+='<td>'
-            record_table+='<div class="SummaryFields">'
-            record_table+='<h2>'
-            record_table+='<a href="'+title_url+'">'+str(record_title)+'</a>'
-            record_table+='</h2>'
-            if author_str !=  "":
-               record_table+='<h3>'+author_str+'</h3>'
-            record_table+='<h3>'+publication_info+'</h3>'
-            record_table+='</div>'
-            record_table+='</td>'
-            record_table+='</tr>'
-      record_table+='</tbody>'
-      record_table+='</table>'
-      record_table+='</div>'
-      result_page=re.sub(results_marker,record_table,result_page)
-
-##  compute next_page and previous_page links
-##  based on number_found, rows, start_record
-##  if (start_record + rows) >=  number_found: no next_page
-##  if (start_record -rows >= 0): create link to previous_page [start_record= start_record - rows]
-##  if (start_record - rows) < 0 : no previous_page
-##  if (start_record + rows) < number_found: create link to next_page [start_record= start_record+rows ]
-## 
-##    result_page=re.sub(previous_marker,previouspage_element,result_page)
-##    result_page=re.sub(next_marker,nextpage_element,result_page)
-## 
-      nextpage_link=''
-      previouspage_link=''
-      previouspage_element=''
-      nextpage_element=''
-      if int(start_record) + int(page_size) < int(number_found):
-        next_page=str(int(start_record)+int(page_size))
-        quote_user_query=urllib.parse.quote(user_query)
-        nextpage_link=webserver_host+cgi_path+facet_script+'?q='+quote_user_query+'&next='+next_page+"&fq="+filter_query
-        nextpage_element='<a href="'+nextpage_link+'" title="Next page"><b>NEXT</b></a>'
-      if int(start_record) - int(page_size) >= 0:
-        next_page=str(int(start_record)-int(page_size))
-        previouspage_link=webserver_host+cgi_path+facet_script+'?q='+quote_user_query+'&next='+next_page+"&fq="+filter_query
-        previouspage_element='<a href="'+previouspage_link+'" title="Previous page"><b>PREVIOUS</b></a>'
-
-      result_page=re.sub(previous_marker,previouspage_element,result_page)
-      result_page=re.sub(next_marker,nextpage_element,result_page)
-      in_line=re.compile(r'(.*<input type="text".*?value=")(.*?")(.*?>)(.*)',flags=re.DOTALL)
-      user_query=urllib.parse.unquote(user_query,encoding='utf-8')
-      m=in_line.match(result_page)
-      if m:
-           result_page=m.group(1)+user_query+'"'+m.group(3)+m.group(4)
-      print_page(result_page)
-      return 
   except HTTPError as http_err:
     print(f'HTTP error occurred: {http_err}',file=sys.stderr)
   except Exception as err:
@@ -475,3 +343,4 @@ def process_form(user_query,solr_host,solr_path,display_results,display_full_rec
 
 if __name__ == "__main__":
     main()
+      
