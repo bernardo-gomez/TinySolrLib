@@ -298,7 +298,7 @@ class Record:
                         name_880=subfa_880
                if name_is_880:
                    name_880=name_880.replace("..",".")
-      if name_880 != "":
+      if name_is_880 :
            name=name_880
       return name
 
