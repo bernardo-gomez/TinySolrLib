@@ -673,7 +673,7 @@ func main() {
    if nextPage == "" {
 	   nextPage="0"
    }
-   subs,err:=regexp.Compile(`<|>|;|'|&`)
+   subs,err:=regexp.Compile(`<|>|;|'|&|:`)
    userQuery=subs.ReplaceAllString(userQuery,"")
    authorization:=strings.Split(credentials,"_|_")
    authorizedUser:=authorization[0]
