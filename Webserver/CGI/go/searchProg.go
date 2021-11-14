@@ -458,7 +458,7 @@ func main() {
 	   nextPage="0"
    }
    var normalizedQ string =""
-   subs,err:=regexp.Compile(`<|>|;|'|&`)   // play safe with shell chars.
+	subs,err:=regexp.Compile(`<|>|;|'|&|:`)   // play safe with shell chars.
    userQuery=subs.ReplaceAllString(userQuery,"") //xxxxx
    normalizedQ=userQuery
    terms:=strings.Split(userQuery," ")
