@@ -189,7 +189,7 @@ def main():
   user_query=form["query"].value
 
 # basic safety step
-  user_query=re.sub(r'<|>|;|\'|&','',user_query)
+  user_query=re.sub(r'<|>|;|\'|&|:','',user_query)
 
 # normalize query for solr, if needed.
   normalized_q=user_query
