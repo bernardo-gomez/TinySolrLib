@@ -184,7 +184,7 @@ class new_page:
        page_string=page_string.replace("<!--DIDYOUMEAN=-->",did_you_mean)
        return page_string,0
 
-   def record_list(self,response,user_query,webserver_host,cgi_path,search_script,refine_results,facet_script,page_size,record_count_marker,facet_marker,previous_marker,next_marker,full_record_script,results_marker):
+   def record_list(self,response,user_query,webserver_host,cgi_path,search_script,refine_results,facet_script,page_size,record_count_marker,facet_marker,previous_marker,next_marker,full_record_script,results_marker,facet_search,filter_query):
       """
         record_list builds the html page that displays a list of records
             in brief format.
@@ -210,7 +210,7 @@ class new_page:
       try:
           jsonResponse = response.json()
       except:
-         print("connection to solr server failed ",file=sys.stderr)
+         print("not a solr json respond",file=sys.stderr)
          return "System error(21). Not a json response",1
 
       refine_result_string=""
@@ -321,10 +321,14 @@ class new_page:
         next_page=str(int(start_record)+int(page_size))
         quote_user_query=urllib.parse.quote(user_query)
         nextpage_link=webserver_host+cgi_path+'search?query='+quote_user_query+'&next='+next_page
+        if facet_search:
+           nextpage_link=webserver_host+cgi_path+'facet_search?q='+quote_user_query+'&next='+next_page+'&fq='+filter_query
         nextpage_element='<span>  <a href="'+nextpage_link+'" title="Next page"><b>NEXT</b></a>   </span>'
       if int(start_record) - int(page_size) >= 0:
         next_page=str(int(start_record)-int(page_size))
         previouspage_link=webserver_host+cgi_path+'search?query='+quote_user_query+'&next='+next_page
+        if facet_search:
+           previouspage_link=webserver_host+cgi_path+'facet_search?q='+quote_user_query+'&next='+next_page+'&fq='+filter_query
         previouspage_element='<span> <a href="'+previouspage_link+'" title="Previous page"><b>PREVIOUS</b></a>  </span>'
 
       result_page=re.sub(previous_marker,previouspage_element,result_page)
@@ -340,4 +344,3 @@ class new_page:
 if __name__=="__main__":
     page=new_page("/home/bernardo/Webserver/Documents/euclid/full_record.html")
     print(page)
-    
