@@ -187,7 +187,7 @@ def main():
   if "fq" in form:
       filter_query=form["fq"].value
   user_query=form["q"].value
-  user_query=re.sub(r'<|>|;|\'','',user_query)
+  user_query=re.sub(r'<|>|;|:|\'','',user_query)
 # user_query=re.sub(r'"|,',' ',user_query)
 
   authorized_user,authorized_passwd=credentials.split("_|_")
@@ -310,7 +310,6 @@ def process_form(user_query,solr_host,solr_path,display_results,display_full_rec
          print_error("System error(10)")
          return
 
-      #print(jsonResponse,file=sys.stderr)
 
       number_found=jsonResponse["response"]["numFound"]
       start_record=jsonResponse["response"]["start"]
@@ -328,7 +327,8 @@ def process_form(user_query,solr_host,solr_path,display_results,display_full_rec
             print ("No facet matches. Database may be incomplete.",file=sys.stderr)
             return
       multiple_recs=displaypage.new_page(display_results)
-      page_string,outcome=multiple_recs.record_list(response,user_query,webserver_host,cgi_path,search_script,refine_results,facet_script,page_size,record_count_marker,facet_marker,previous_marker,next_marker,full_record_script,results_marker)
+      facet_search=True
+      page_string,outcome=multiple_recs.record_list(response,user_query,webserver_host,cgi_path,search_script,refine_results,facet_script,page_size,record_count_marker,facet_marker,previous_marker,next_marker,full_record_script,results_marker,facet_search,filter_query)
       if outcome == 0:
             print_page(page_string)
       else:
@@ -343,4 +343,3 @@ def process_form(user_query,solr_host,solr_path,display_results,display_full_rec
 
 if __name__ == "__main__":
     main()
-      
