@@ -13,7 +13,7 @@ This platform is based on a website implemented as a CGI, written in python3. Th
 
 There is a presentation on how to deploy solr at 
 
-http://solrtinylib.info/reveal.js/solrtinylib_learn.html 
+http://solrtinylib.info/reveal.js/solrtinylib_learn.html  
 
 The python demonstration server is at:
 https://solrtinylib.info/cgi-bin/search   
